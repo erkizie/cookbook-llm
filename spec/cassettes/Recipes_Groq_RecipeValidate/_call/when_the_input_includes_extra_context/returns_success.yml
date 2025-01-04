@@ -27,7 +27,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:09:51 GMT
+      - Sat, 04 Jan 2025 13:52:00 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcb77228eeaecb4-WAW
+      - 8fcbb4e2be86b21e-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -53,28 +53,29 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14393'
+      - '14397'
       X-Ratelimit-Remaining-Tokens:
-      - '4406'
+      - '4774'
       X-Ratelimit-Reset-Requests:
-      - 41.616999999s
+      - 17.627s
       X-Ratelimit-Reset-Tokens:
-      - 7.124s
+      - 2.711s
       X-Request-Id:
-      - req_01jgrpzcfsfmjaj3sfrm3g7pbn
+      - req_01jgrscjh2fcq8a1ecp8km5s2e
       Set-Cookie:
-      - __cf_bm=bNDItObpo34or4Kzki5lD2qh2idPr0veWVBbunPHXEs-1735996191-1.0.1.1-38kKFl7BYYK1tvonSeSRaiQKFM6wIEazcG60XPT.UOLbuM9Y4duFlipIiZ.zrtu6k4js_Oq4VQuue5yHGqKnvw;
-        path=/; expires=Sat, 04-Jan-25 13:39:51 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=HwNgBUfgoZ7IeQy_4Z4HPIJMAEQb73BQw7pDNGPDbDI-1735998720-1.0.1.1-DhIfGfKat11jUaP_aDktPWFJiAIAZHzFFXiOF8j0Y5JAcSy8EzxSRNTAxen7aRXn0I0ttfZnfeeuYkS2f8DTig;
+        path=/; expires=Sat, 04-Jan-25 14:22:00 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-a7fb4340-d6ed-484d-aae9-c1837aae9cb4","object":"chat.completion","created":1735996191,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
-        The recipe only includes cooking rice and chicken with salt (implied since
-        it''s not mentioned as a separate step) and combining them. All the ingredients
-        are accounted for in the recipe."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.02683236,"prompt_tokens":74,"prompt_time":0.005371335,"completion_tokens":43,"completion_time":0.067411145,"total_tokens":117,"total_time":0.07278248},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrpzcfsfmjaj3sfrm3g7pbn"}}
+      string: '{"id":"chatcmpl-186f69fa-01e0-43f8-9d99-08c900612a0b","object":"chat.completion","created":1735998720,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        The recipe only includes the ingredients provided (chicken, rice, and salt),
+        and the steps are clear and simple enough to follow. Salt was not explicitly
+        mentioned in the steps, but it can be assumed that it would be added during
+        cooking or at the table, if desired."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.025706339,"prompt_tokens":74,"prompt_time":0.004613857,"completion_tokens":60,"completion_time":0.094643144,"total_tokens":134,"total_time":0.099257001},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrscjh2fcq8a1ecp8km5s2e"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 13:09:51 GMT
+  recorded_at: Sat, 04 Jan 2025 13:52:00 GMT
 recorded_with: VCR 6.3.1

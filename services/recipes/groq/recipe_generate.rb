@@ -29,12 +29,12 @@ module Recipes
 
       def validate_ingredients!(ingredients)
         validation = Recipes::Groq::IngredientsValidate.new(ingredients).call
-        fail!(validation.errors.join(', ')) unless validation.success?
+        raise validation.errors.join(', ') unless validation.success?
       end
 
       def validate_recipe!(ingredients)
         validation = Recipes::Groq::RecipeValidate.new(recipe, ingredients).call
-        fail!(validation.errors.join(', ')) unless validation.success?
+        raise validation.errors.join(', ') unless validation.success?
       end
 
       def build_prompt(ingredients)

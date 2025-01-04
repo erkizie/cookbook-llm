@@ -23,9 +23,9 @@ module Recipes
 
       def pre_validate!
         if recipe.nil? || recipe.empty?
-          fail!('The recipe cannot be empty.')
+          raise 'The recipe cannot be empty.'
         elsif ingredients.nil? || ingredients.empty?
-          fail!('The ingredients cannot be empty.')
+          raise 'The ingredients cannot be empty.'
         end
       end
 
@@ -39,7 +39,9 @@ module Recipes
       end
 
       def process_response(response)
-        response.downcase.include?('accepted') || fail!('The generated recipe is not valid based on the provided ingredients.')
+        return if response.downcase.include?('accepted')
+
+        raise 'The generated recipe is not valid based on the provided ingredients.'
       end
 
       def build_prompt

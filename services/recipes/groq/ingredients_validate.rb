@@ -23,7 +23,7 @@ module Recipes
       def pre_validate!
         return unless ingredients.nil? || ingredients.empty?
 
-        fail!('The input does not contain valid ingredients.')
+        raise 'The input does not contain valid ingredients.'
       end
 
       def validate_ingredients!
@@ -36,7 +36,9 @@ module Recipes
       end
 
       def process_response(response)
-        response.downcase.include?('accepted') || fail!('The input does not contain valid ingredients.')
+        return if response.downcase.include?('accepted')
+
+        raise 'The input does not contain valid ingredients.'
       end
 
       def build_prompt

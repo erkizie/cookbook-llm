@@ -29,7 +29,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:10:37 GMT
+      - Sat, 04 Jan 2025 13:53:53 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcb78405975eed6-WAW
+      - 8fcbb7a67998c3b5-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -55,25 +55,25 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14388'
+      - '14397'
       X-Ratelimit-Remaining-Tokens:
-      - '4730'
+      - '4737'
       X-Ratelimit-Reset-Requests:
-      - 1m11.705s
+      - 17.668999999s
       X-Ratelimit-Reset-Tokens:
-      - 3.24s
+      - 3.156s
       X-Request-Id:
-      - req_01jgrq0s4yenh8ttwkg4epcdj3
+      - req_01jgrsg143e8ha574qvp7az36m
       Set-Cookie:
-      - __cf_bm=jSCUD3ULVppxqWFG8BVM8gluSAemv8bbf7jV.dkCLSE-1735996237-1.0.1.1-bbZfdBzL85jVw.WCLZSo3u5TFNPw0RCs5LuyxmIsG0J74DVsLk6nIRhpXyw1UZf37SApHVGyAdyt39m0riG5GQ;
-        path=/; expires=Sat, 04-Jan-25 13:40:37 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=cv5p6nqqZYu7lH5QifUlxHm0XHFBnjQWDwMLYTBTFxw-1735998833-1.0.1.1-YxvAs41xlPQqDYCJJnPXks6qXMtwGt0K1eBh2DykVqc3rbm9Hz6RXEqJTnCp6wd3Go8JDtNLgKhotg1zPOKp0w;
+        path=/; expires=Sat, 04-Jan-25 14:23:53 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-c7a21781-b487-4c64-bbf1-7c790f955193","object":"chat.completion","created":1735996236,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.023370129,"prompt_tokens":97,"prompt_time":0.006932831,"completion_tokens":3,"completion_time":0.003190531,"total_tokens":100,"total_time":0.010123362},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrq0s4yenh8ttwkg4epcdj3"}}
+      string: '{"id":"chatcmpl-0c213b00-106f-463e-ad43-19e386204da4","object":"chat.completion","created":1735998833,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.022924365000000002,"prompt_tokens":97,"prompt_time":0.00706772,"completion_tokens":3,"completion_time":0.003197141,"total_tokens":100,"total_time":0.010264861},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrsg143e8ha574qvp7az36m"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 13:10:37 GMT
+  recorded_at: Sat, 04 Jan 2025 13:53:53 GMT
 recorded_with: VCR 6.3.1

@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: chicken, rice, salt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 13:51:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcbb3f86defee3c-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14398'
+      X-Ratelimit-Remaining-Tokens:
+      - '4784'
+      X-Ratelimit-Reset-Requests:
+      - 10.739s
+      X-Ratelimit-Reset-Tokens:
+      - 2.586s
+      X-Request-Id:
+      - req_01jgrsbeb8e67ssjsj97hjf7p4
+      Set-Cookie:
+      - __cf_bm=iBk.hR9XQ5pEWGdH.RBSE424kT3IxSn2KMEB8ew1VGU-1735998684-1.0.1.1-wS_3f3r5ltobsoNZIpqSJ7sFOm1dGFRtui3LfbouhES1plAZsAh2bV.1qPve57YD12hdRaVBHWemkOwrG.a18g;
+        path=/; expires=Sat, 04-Jan-25 14:21:24 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-6f9d1276-e2d8-4a71-96bb-15d3b0abcee0","object":"chat.completion","created":1735998683,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple recipe for chicken and rice using just those ingredients:\n\nIngredients:\n\n*
+        1 pound boneless, skinless chicken breasts or thighs\n* 1 cup uncooked white
+        rice\n* Salt, to taste\n\nInstructions:\n\n1. Rinse the chicken and pat it
+        dry with paper towels. Cut the chicken into bite-sized pieces.\n2. Heat a
+        large skillet over medium-high heat. Add the chicken to the skillet and cook
+        until it is browned on all sides and cooked through, about 5-7 minutes.\n3.
+        While the chicken is cooking, rinse the rice in a fine-mesh strainer under
+        cold running water.\n4. When the chicken is cooked, remove it from the skillet
+        and set it aside on a plate.\n5. In the same skillet, add the rinsed rice
+        and stir it around for a minute or two to toast it slightly.\n6. Add 2 cups
+        of water to the skillet and stir to combine with the rice. Bring the water
+        to a boil.\n7. Once the water is boiling, reduce the heat to low, cover the
+        skillet, and let the rice simmer for 15-20 minutes, or until it has absorbed
+        all of the water and is fully cooked.\n8. Fluff the cooked rice with a fork
+        and add the cooked chicken back into the skillet. Stir to combine.\n9. Season
+        the chicken and rice with salt, to taste.\n10. Serve hot and enjoy!\n\nOptional
+        variations:\nYou can add other ingredients to this basic recipe to give it
+        more flavor. Here are a few ideas:\n\n* Add some chopped onions or garlic
+        to the skillet when you cook the chicken.\n* Stir in some chopped vegetables,
+        such as bell peppers, carrots, or peas, when you add the chicken back into
+        the skillet.\n* Sprinkle some dried herbs, such as thyme or rosemary, over
+        the rice and chicken before serving.\n* Drizzle some olive oil or butter over
+        the cooked rice and chicken for added richness."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.028065084,"prompt_tokens":26,"prompt_time":0.002896152,"completion_tokens":467,"completion_time":0.745545101,"total_tokens":493,"total_time":0.748441253},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrsbeb8e67ssjsj97hjf7p4"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 13:51:24 GMT
+recorded_with: VCR 6.3.1
