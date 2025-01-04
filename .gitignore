@@ -1,0 +1,15 @@
+# Ruby specific
+*.gem
+*.rbc
+/InstalledFiles
+/spec/reports/
+/spec/examples.txt
+.byebug_history
+
+# Environment variables
+.env
+.env.*
+
+# IDE specific files
+.idea/
+.vscode/
