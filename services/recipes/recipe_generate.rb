@@ -6,18 +6,16 @@ module Recipes
 
     def initialize(ingredients, llm_client: Recipes::Groq::RecipeGenerate.new)
       super()
-      @ingredients = ingredients.strip
+      @ingredients = ingredients&.strip
       @llm_client = llm_client
       @recipe = nil
     end
 
     def call
-      llm_response = llm_client.call(ingredients)
-      if llm_response.success?
-        @recipe = llm_response.recipe
-      else
-        fail!(llm_response.errors.join(', '))
-      end
+      validate_ingredients!
+      generate_recipe
+
+      @recipe = llm_client.recipe
     rescue StandardError => e
       fail!(e.message)
     end
@@ -25,5 +23,16 @@ module Recipes
     private
 
     attr_reader :ingredients, :llm_client
+
+    def generate_recipe
+      llm_client.call(ingredients)
+      return if llm_client.success?
+
+      raise llm_client.errors.join(', ')
+    end
+
+    def validate_ingredients!
+      raise 'Ingredients cannot be empty' if ingredients.nil? || ingredients.empty?
+    end
   end
 end

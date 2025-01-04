@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 RSpec.describe Recipes::Groq::RecipeGenerate, :vcr do
   let(:client) { GroqClient.new }
   let(:service) { described_class.new(client: client) }
