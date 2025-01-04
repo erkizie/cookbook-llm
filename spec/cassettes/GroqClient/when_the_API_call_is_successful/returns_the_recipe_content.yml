@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a recipe for chicken and rice."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 10:30:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fca8d676d6a024c-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14399'
+      X-Ratelimit-Remaining-Tokens:
+      - '4984'
+      X-Ratelimit-Reset-Requests:
+      - 6s
+      X-Ratelimit-Reset-Tokens:
+      - 192ms
+      X-Request-Id:
+      - req_01jgrdv789e5va7ns083abt6ae
+      Set-Cookie:
+      - __cf_bm=sD2kK_hByP9swiD7eY90fGadE5Fn4t.krCkMswdvq2w-1735986618-1.0.1.1-MXdtE6iN5EY4gf3iydC6bThAAb.9aBDAKMX7OSotCMUOf7HwTNGh6I3ewvYEFhE5QkHBcZ3qNaInNAOCq0XA_w;
+        path=/; expires=Sat, 04-Jan-25 11:00:18 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-ff627281-1743-439e-a324-df20409b4ec9","object":"chat.completion","created":1735986617,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple and delicious recipe for chicken and rice:\n\nIngredients:\n\n*
+        1 1/2 pounds boneless, skinless chicken breasts or thighs, cut into bite-sized
+        pieces\n* 1 tablespoon olive oil\n* 1 onion, chopped\n* 3 cloves garlic, minced\n*
+        1 red bell pepper, chopped\n* 1 cup long-grain white rice\n* 2 cups chicken
+        broth\n* 1 can diced tomatoes, drained\n* 1 teaspoon paprika\n* 1 teaspoon
+        cumin\n* 1/2 teaspoon salt\n* 1/4 teaspoon black pepper\n* 1/4 cup chopped
+        fresh cilantro\n* Juice of 1 lime\n\nInstructions:\n\n1. Heat the olive oil
+        in a large skillet over medium-high heat. Add the chicken and cook until browned
+        on all sides, about 5 minutes. Remove the chicken from the skillet and set
+        aside.\n2. Add the onion, garlic, and bell pepper to the skillet and cook
+        until the onion is softened, about 5 minutes.\n3. Stir in the rice and cook
+        for 1 minute.\n4. Add the chicken broth, diced tomatoes, paprika, cumin, salt,
+        and black pepper. Bring the mixture to a boil, then reduce the heat to low
+        and simmer, covered, for 18-20 minutes, or until the rice is tender and the
+        liquid has been absorbed.\n5. Stir in the cooked chicken, cilantro, and lime
+        juice. Cook for 2-3 minutes, or until the chicken is heated through.\n6. Taste
+        and adjust the seasoning as needed. Serve hot.\n\nEnjoy your delicious chicken
+        and rice!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.030228956999999997,"prompt_tokens":16,"prompt_time":0.00230212,"completion_tokens":403,"completion_time":0.644437192,"total_tokens":419,"total_time":0.646739312},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrdv789e5va7ns083abt6ae"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 10:30:18 GMT
+recorded_with: VCR 6.3.1

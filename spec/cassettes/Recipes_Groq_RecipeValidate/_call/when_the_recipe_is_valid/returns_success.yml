@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chicken, rice, salt. Recipe:
+        Step 1: Boil rice. Step 2: Cook chicken. Step 3: Mix together.. Respond with
+        ''accepted'' if the recipe matches the ingredients or ''rejected'' otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 13:09:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcb77131d9001fa-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14399'
+      X-Ratelimit-Remaining-Tokens:
+      - '4930'
+      X-Ratelimit-Reset-Requests:
+      - 6s
+      X-Ratelimit-Reset-Tokens:
+      - 840ms
+      X-Request-Id:
+      - req_01jgrpza2tfz1bhvdy0hx0awqb
+      Set-Cookie:
+      - __cf_bm=VnmHrN2BsbYzfXQk_2yNfSsqWJ6d.WK6p16vdqjFlgM-1735996188-1.0.1.1-N81Q0moz1pUU0cdDcfcdxgao4fOWnYPqMIaee51agF114trNjZFBT1h_mKndlY6oMAXliUv.tJfu7qW4VqDOwg;
+        path=/; expires=Sat, 04-Jan-25 13:39:48 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-66ddb909-11f6-45f9-8745-806bc8ab6fc9","object":"chat.completion","created":1735996188,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
+        recipe is accepted. It only includes steps to cook chicken and rice, both
+        of which are listed ingredients, and a final step to mix them together. Salt
+        is not explicitly used in any step, but it''s also not forbidden, so the recipe
+        is valid with the given ingredients."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.023438621,"prompt_tokens":70,"prompt_time":0.005469345,"completion_tokens":60,"completion_time":0.09457456,"total_tokens":130,"total_time":0.100043905},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrpza2tfz1bhvdy0hx0awqb"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 13:09:48 GMT
+recorded_with: VCR 6.3.1

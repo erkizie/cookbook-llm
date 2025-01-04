@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chicken, rice, salt. Recipe:
+        . Respond with ''accepted'' if the recipe matches the ingredients or ''rejected''
+        otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 13:09:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcb771aa9d2b1d0-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14396'
+      X-Ratelimit-Remaining-Tokens:
+      - '4704'
+      X-Ratelimit-Reset-Requests:
+      - 23.618999999s
+      X-Ratelimit-Reset-Tokens:
+      - 3.549s
+      X-Request-Id:
+      - req_01jgrpzb8xenbb3d9pn152xex9
+      Set-Cookie:
+      - __cf_bm=_8wg8mqj7pYiv_eJe6h7QgWwEuwPT_f3JTtKYximozA-1735996190-1.0.1.1-Sup5YcbfhaqitJhTYqNSoKgCWMFX410NhRe7dF8gu2vFs09biL5GxiNv_Yf27UvL1yJGD3Xb25s6QvEH_ygY6w;
+        path=/; expires=Sat, 04-Jan-25 13:39:50 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-f41e07f5-03af-46bd-b1de-45cc1d0bf2ac","object":"chat.completion","created":1735996190,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
+        recipe provided is: \"Sprinkle salt over the chicken and place it on a baking
+        tray. Cook the chicken in the oven for 30 minutes at 200 degrees. Boil rice
+        separately according to package instructions. Serve the chicken over the cooked
+        rice.\"\n\nBased on the ingredients given (chicken, rice, and salt), this
+        recipe is valid. It includes all the provided ingredients and provides cooking
+        instructions for each one. Therefore, I would ''accept'' this recipe."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.026781530999999997,"prompt_tokens":49,"prompt_time":0.004142978,"completion_tokens":103,"completion_time":0.163232272,"total_tokens":152,"total_time":0.16737525},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrpzb8xenbb3d9pn152xex9"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 13:09:50 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Determine
+        if the following input represents a valid list of cooking ingredients. Focus
+        only on identifying ingredients even if the input contains typos or misspellings.
+        Do NOT attempt to correct typos or suggest alternative spellings. Ignore extra
+        context, quantities, or casual phrasing. Respond ONLY in one word with ''accepted''
+        if the input contains valid ingredients, or ''rejected'' otherwise. Input:
+        chicken, rice, salt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 13:10:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcb783c6c9bb1a0-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14390'
+      X-Ratelimit-Remaining-Tokens:
+      - '4901'
+      X-Ratelimit-Reset-Requests:
+      - 56.971s
+      X-Ratelimit-Reset-Tokens:
+      - 1.188s
+      X-Request-Id:
+      - req_01jgrq0rjdejgbesfte01mn5dx
+      Set-Cookie:
+      - __cf_bm=gxxromp29gsPiaLCMF.U7O3yzGRiJgBQIzxjhKXJdNY-1735996236-1.0.1.1-fUGXWc.GyMcgwwHNzOBtIk4.PqouwSF3UEpeZt.mbR0EEr6JzGcLEuHSLI5E3L5vC5ITdyE0w2o3mUpkKgJCFA;
+        path=/; expires=Sat, 04-Jan-25 13:40:36 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-c7afaece-9daf-4b48-a099-8d474f04b41f","object":"chat.completion","created":1735996236,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.02304104,"prompt_tokens":99,"prompt_time":0.00749539,"completion_tokens":2,"completion_time":0.001611245,"total_tokens":101,"total_time":0.009106635},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrq0rjdejgbesfte01mn5dx"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 13:10:36 GMT
+recorded_with: VCR 6.3.1
