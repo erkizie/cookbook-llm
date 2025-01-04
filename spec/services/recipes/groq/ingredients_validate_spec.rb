@@ -65,26 +65,6 @@ RSpec.describe Recipes::Groq::IngredientsValidate, :vcr do
       end
     end
 
-    context 'when the input is empty' do
-      let(:ingredients) { '' }
-
-      it 'returns failure' do
-        subject.call
-        expect(subject.success?).to eq(false)
-        expect(subject.errors).to include('The input does not contain valid ingredients.')
-      end
-    end
-
-    context 'when the input is nil' do
-      let(:ingredients) { nil }
-
-      it 'returns failure' do
-        subject.call
-        expect(subject.success?).to eq(false)
-        expect(subject.errors).to include('The input does not contain valid ingredients.')
-      end
-    end
-
     context 'when the API raises an error' do
       before do
         allow(llm_client).to receive(:chat).and_raise(StandardError, 'API Error')

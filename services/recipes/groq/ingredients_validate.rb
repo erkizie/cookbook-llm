@@ -10,7 +10,6 @@ module Recipes
       end
 
       def call
-        pre_validate!
         validate_ingredients!
       rescue StandardError => e
         fail!(e.message)
@@ -19,12 +18,6 @@ module Recipes
       private
 
       attr_reader :ingredients, :llm_client
-
-      def pre_validate!
-        return unless ingredients.nil? || ingredients.empty?
-
-        raise 'The input does not contain valid ingredients.'
-      end
 
       def validate_ingredients!
         response = fetch_validation_response
