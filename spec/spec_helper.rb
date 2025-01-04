@@ -3,6 +3,7 @@ require 'rspec'
 require './app'
 require 'vcr'
 require_relative 'support/vcr_helper'
+require 'dotenv/load'
 
 ENV['RACK_ENV'] = 'test'
 

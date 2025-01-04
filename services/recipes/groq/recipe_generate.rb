@@ -28,12 +28,14 @@ module Recipes
       end
 
       def validate_ingredients!(ingredients)
-        validation = Recipes::Groq::IngredientsValidate.new(ingredients).call
+        validation = Recipes::Groq::IngredientsValidate.new(ingredients)
+        validation.call
         raise validation.errors.join(', ') unless validation.success?
       end
 
       def validate_recipe!(ingredients)
-        validation = Recipes::Groq::RecipeValidate.new(recipe, ingredients).call
+        validation = Recipes::Groq::RecipeValidate.new(recipe, ingredients)
+        validation.call
         raise validation.errors.join(', ') unless validation.success?
       end
 

@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: ."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 16:34:49 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcca35cbff4bf51-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14397'
+      X-Ratelimit-Remaining-Tokens:
+      - '4398'
+      X-Ratelimit-Reset-Requests:
+      - 17.513999999s
+      X-Ratelimit-Reset-Tokens:
+      - 7.221s
+      X-Request-Id:
+      - req_01jgs2pnkafwzr4cnydawdc18g
+      Set-Cookie:
+      - __cf_bm=.kdNjjqToei28f9YlMTv5mWNlebGL_Lri4haqvKzT9A-1736008489-1.0.1.1-wq2BLalUJmZQ6Ocg1TnYbijnez6cPV6GMCjiznPy_L0QlUgl0h3IR7PnPxt.htZKWE_F9m8rotOmCRSMqQTkOg;
+        path=/; expires=Sat, 04-Jan-25 17:04:49 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLWVjZDczOTA4LTQyNjctNGI4Ny1iYTMyLWI1MDZmZjk3MjJmMyIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzYwMDg0ODgsIm1vZGVsIjoibWl4dHJhbC04eDdiLTMyNzY4IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsImNvbnRlbnQiOiJTdXJlLCBoZXJlJ3MgYSByZWNpcGUgZm9yIGEgVmVnZ2llIGFuZCBDaGVlc2UgU2tpbGxldCBCYWtlIHVzaW5nIHRoZSBpbmdyZWRpZW50cyB5b3UgcHJvdmlkZWQ6XG5cbkluZ3JlZGllbnRzOlxuXG4qIDEgenVjY2hpbmlcbiogMSB5ZWxsb3cgc3F1YXNoXG4qIDEgYmVsbCBwZXBwZXJcbiogMSBvbmlvblxuKiAyIGNsb3ZlcyBvZiBnYXJsaWNcbiogMSBjYW4gb2YgZGljZWQgdG9tYXRvZXMgKDE0LjUgb3opXG4qIDEgY3VwIG9mIHNocmVkZGVkIGNoZWVzZSAoY2hlZGRhciwgbW96emFyZWxsYSwgb3IgYSBtaXgpXG4qIDEgY3VwIG9mIGJyZWFkIGNydW1ic1xuKiAyIHRhYmxlc3Bvb25zIG9mIG9saXZlIG9pbFxuKiBTYWx0IGFuZCBwZXBwZXIsIHRvIHRhc3RlXG4qIE9wdGlvbmFsOiBmcmVzaCBoZXJicyBzdWNoIGFzIGJhc2lsIG9yIHBhcnNsZXlcblxuSW5zdHJ1Y3Rpb25zOlxuXG4xLiBQcmVoZWF0IHRoZSBvdmVuIHRvIDM3NcKwRiAoMTkwwrBDKS5cbjIuIFdhc2ggYW5kIGNob3AgdGhlIHp1Y2NoaW5pLCB5ZWxsb3cgc3F1YXNoLCBiZWxsIHBlcHBlciwgb25pb24sIGFuZCBnYXJsaWMuXG4zLiBIZWF0IHRoZSBvbGl2ZSBvaWwgaW4gYSBsYXJnZSBvdmVuLXNhZmUgc2tpbGxldCAob3IgYSBwYW4gdGhhdCB5b3UgY2FuIHRyYW5zZmVyIHRvIGEgYmFraW5nIGRpc2gpIG92ZXIgbWVkaXVtIGhlYXQuXG40LiBBZGQgdGhlIGNob3BwZWQgb25pb24gYW5kIGdhcmxpYyB0byB0aGUgc2tpbGxldCBhbmQgY29vayB1bnRpbCB0aGUgb25pb24gaXMgdHJhbnNsdWNlbnQsIGFib3V0IDUgbWludXRlcy5cbjUuIEFkZCB0aGUgY2hvcHBlZCB6dWNjaGluaSwgeWVsbG93IHNxdWFzaCwgYW5kIGJlbGwgcGVwcGVyIHRvIHRoZSBza2lsbGV0LiBDb29rIHVudGlsIHRoZSB2ZWdldGFibGVzIGFyZSB0ZW5kZXIsIGFib3V0IDEwIG1pbnV0ZXMuXG42LiBBZGQgdGhlIGNhbiBvZiBkaWNlZCB0b21hdG9lcyAod2l0aCB0aGVpciBqdWljZSkgdG8gdGhlIHNraWxsZXQgYW5kIHN0aXIgdG8gY29tYmluZS5cbjcuIFNlYXNvbiB0aGUgdmVnZXRhYmxlIG1peHR1cmUgd2l0aCBzYWx0IGFuZCBwZXBwZXIgdG8gdGFzdGUuXG44LiBTcHJpbmtsZSB0aGUgc2hyZWRkZWQgY2hlZXNlIGV2ZW5seSBvdmVyIHRoZSB0b3Agb2YgdGhlIHZlZ2V0YWJsZSBtaXh0dXJlLlxuOS4gSW4gYSBzZXBhcmF0ZSBib3dsLCBtaXggdGhlIGJyZWFkIGNydW1icyB3aXRoIGEgbGl0dGxlIGJpdCBvZiBvbGl2ZSBvaWwgYW5kIGFueSBmcmVzaCBoZXJicyB5b3UgbWF5IGJlIHVzaW5nLlxuMTAuIFNwcmlua2xlIHRoZSBicmVhZCBjcnVtYiBtaXh0dXJlIGV2ZW5seSBvdmVyIHRoZSB0b3Agb2YgdGhlIGNoZWVzZS5cbjExLiBUcmFuc2ZlciB0aGUgc2tpbGxldCB0byB0aGUgcHJlaGVhdGVkIG92ZW4gYW5kIGJha2UgdW50aWwgdGhlIGNoZWVzZSBpcyBtZWx0ZWQgYW5kIHRoZSBicmVhZCBjcnVtYnMgYXJlIGdvbGRlbiBicm93biwgYWJvdXQgMTUtMjAgbWludXRlcy5cbjEyLiBSZW1vdmUgdGhlIHNraWxsZXQgZnJvbSB0aGUgb3ZlbiBhbmQgbGV0IGl0IGNvb2wgZm9yIGEgZmV3IG1pbnV0ZXMgYmVmb3JlIHNlcnZpbmcuIEVuam95ISJ9LCJsb2dwcm9icyI6bnVsbCwiZmluaXNoX3JlYXNvbiI6InN0b3AifV0sInVzYWdlIjp7InF1ZXVlX3RpbWUiOjAuMDMwNDAzNjk3LCJwcm9tcHRfdG9rZW5zIjoyMSwicHJvbXB0X3RpbWUiOjAuMDAyNjQ5MDkyLCJjb21wbGV0aW9uX3Rva2VucyI6NDc5LCJjb21wbGV0aW9uX3RpbWUiOjAuNzY2MTYyNDk3LCJ0b3RhbF90b2tlbnMiOjUwMCwidG90YWxfdGltZSI6MC43Njg4MTE1ODl9LCJzeXN0ZW1fZmluZ2VycHJpbnQiOiJmcF9jNWYyMGI1YmIxIiwieF9ncm9xIjp7ImlkIjoicmVxXzAxamdzMnBua2Fmd3pyNGNueWRhd2RjMThnIn19Cg==
+  recorded_at: Sat, 04 Jan 2025 16:34:49 GMT
+recorded_with: VCR 6.3.1

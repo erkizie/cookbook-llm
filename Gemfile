@@ -6,6 +6,7 @@ gem 'dotenv'
 gem 'pry'
 gem 'rack-test'
 gem 'sinatra'
+gem 'sinatra-contrib'
 
 gem 'groq', '~> 0.3.2'
 

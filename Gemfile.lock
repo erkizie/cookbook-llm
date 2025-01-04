@@ -47,6 +47,7 @@ GEM
     logger (1.6.4)
     method_source (1.1.0)
     minitest (5.25.4)
+    multi_json (1.15.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     net-http (0.6.0)
@@ -87,6 +88,12 @@ GEM
       rack-protection (= 4.1.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
+    sinatra-contrib (4.1.1)
+      multi_json (>= 0.0.2)
+      mustermann (~> 3.0)
+      rack-protection (= 4.1.1)
+      sinatra (= 4.1.1)
+      tilt (~> 2.0)
     tilt (2.5.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -109,6 +116,7 @@ DEPENDENCIES
   rack-test
   rspec
   sinatra
+  sinatra-contrib
   vcr
   webmock
 

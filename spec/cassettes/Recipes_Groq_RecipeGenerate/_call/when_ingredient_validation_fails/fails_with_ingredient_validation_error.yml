@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: chicken, rice, salt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 16:34:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcca354deffee4d-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14399'
+      X-Ratelimit-Remaining-Tokens:
+      - '4974'
+      X-Ratelimit-Reset-Requests:
+      - 6s
+      X-Ratelimit-Reset-Tokens:
+      - 312ms
+      X-Request-Id:
+      - req_01jgs2pmbqew7bfh4bn6tp6h7s
+      Set-Cookie:
+      - __cf_bm=U5vOAYafQPTDsz9Ddpmx2GYbBE7a2nK1Kz5gy2nwoZ0-1736008487-1.0.1.1-9wwIdV2Rs1oeDTkl3YPYmW8i1pzVlVtPrN6PPjKb2bmIY6Ya4fqByzOyiGE3ZO2HtmCEPRr16a6unSAfXeDrzQ;
+        path=/; expires=Sat, 04-Jan-25 17:04:47 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-737d4649-d32c-426f-af7d-97cd23e4b3f4","object":"chat.completion","created":1736008487,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple recipe for chicken and rice using just those ingredients:\n\nIngredients:\n\n*
+        1 lb boneless, skinless chicken breasts or thighs\n* 1 cup uncooked white
+        rice\n* Salt, to taste\n\nInstructions:\n\n1. Rinse the rice under cold water
+        until the water runs clear. This helps to remove excess starch and prevent
+        the rice from clumping together.\n2. Place the rinsed rice in a saucepan and
+        add 2 cups of water. Bring the water to a boil over high heat.\n3. While the
+        water is heating, season the chicken with salt on both sides.\n4. Once the
+        water is boiling, add the seasoned chicken to the saucepan. Reduce the heat
+        to low, cover the saucepan, and let it simmer for 18-20 minutes, or until
+        the chicken is cooked through and the rice is tender.\n5. Use a fork to fluff
+        the cooked rice and break up any clumps. Stir the chicken and rice together,
+        and add more salt if needed.\n6. Serve the chicken and rice hot, garnished
+        with additional salt if desired.\n\nEnjoy your meal! Note that this recipe
+        is quite basic, so feel free to add additional seasonings or ingredients to
+        suit your taste."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.029745772999999996,"prompt_tokens":26,"prompt_time":0.002666382,"completion_tokens":290,"completion_time":0.46452316,"total_tokens":316,"total_time":0.467189542},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgs2pmbqew7bfh4bn6tp6h7s"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 16:34:47 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chicken, rice, salt. Recipe:
+        Sure, here''s a simple recipe for chicken and rice using just those ingredients:\n\nIngredients:\n\n*
+        1 lb boneless, skinless chicken breasts or thighs\n* 1 cup uncooked white
+        rice\n* Salt, to taste\n\nInstructions:\n\n1. Rinse the rice under cold water
+        until the water runs clear. This helps to remove excess starch and prevent
+        the rice from clumping together.\n2. Place the rinsed rice in a saucepan and
+        add 2 cups of water. Bring the water to a boil over high heat.\n3. While the
+        water is heating, season the chicken with salt on both sides.\n4. Once the
+        water is boiling, add the seasoned chicken to the saucepan. Reduce the heat
+        to low, cover the saucepan, and let it simmer for 18-20 minutes, or until
+        the chicken is cooked through and the rice is tender.\n5. Use a fork to fluff
+        the cooked rice and break up any clumps. Stir the chicken and rice together,
+        and add more salt if needed.\n6. Serve the chicken and rice hot, garnished
+        with additional salt if desired.\n\nEnjoy your meal! Note that this recipe
+        is quite basic, so feel free to add additional seasonings or ingredients to
+        suit your taste.. Respond with ''accepted'' if the recipe matches the ingredients
+        or ''rejected'' otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2025 16:34:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fcca359aac5ecb7-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14398'
+      X-Ratelimit-Remaining-Tokens:
+      - '4396'
+      X-Ratelimit-Reset-Requests:
+      - 11.222s
+      X-Ratelimit-Reset-Tokens:
+      - 7.236999999s
+      X-Request-Id:
+      - req_01jgs2pn41f1m8r0zdqd1mqnxt
+      Set-Cookie:
+      - __cf_bm=tUNnwems53pXERdl_rkY6q1okGAPn1ZBtTV9QQK.8cE-1736008488-1.0.1.1-OcXsodImcQ27m6PgM5M2fTHYkv6J_XYkG2Lq4exYCCJLmWwv_Q4P6VGvSUxqGkUUAnvwpCz_cjIOw7nSOefKtg;
+        path=/; expires=Sat, 04-Jan-25 17:04:48 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-0f3f3c23-f6b6-44f6-8c1f-7657bfc3568b","object":"chat.completion","created":1736008488,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        This recipe matches the given ingredients of chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.016514844,"prompt_tokens":337,"prompt_time":0.017887066,"completion_tokens":18,"completion_time":0.027192959,"total_tokens":355,"total_time":0.045080025},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgs2pn41f1m8r0zdqd1mqnxt"}}
+
+        '
+  recorded_at: Sat, 04 Jan 2025 16:34:48 GMT
+recorded_with: VCR 6.3.1
