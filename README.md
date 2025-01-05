@@ -1,6 +1,6 @@
 # Cookbook LLM
 
-Cookbook LLM is a back-end application designed to generate step-by-step recipes using AI. It validates user-provided ingredients and ensures the generated recipe matches the provided input. The project is built using Sinatra, adheres to clean architecture principles, and employs external API integrations for recipe generation and validation.
+Cookbook LLM is a full-stack application designed to generate step-by-step recipes using AI. It features a robust back-end built with Sinatra and a user-friendly React front-end interface. The back-end validates user-provided ingredients and ensures that the generated recipe aligns with the provided input.
 
 ---
 
