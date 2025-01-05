@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import qs from 'qs'; // For URL-encoded data
+import qs from 'qs';
+import './App.css';
 
 function App() {
   const [ingredients, setIngredients] = useState('');
@@ -20,7 +21,7 @@ function App() {
     try {
       const response = await axios.post(
         'http://localhost:9292/generate_recipe',
-        qs.stringify({ ingredients }), // URL-encoded data
+        qs.stringify({ ingredients }),
         {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         }
@@ -32,30 +33,34 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Recipe Generator</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
+    <div className="container">
+      <h1 className="title">Recipe Generator</h1>
+      <form className="form" onSubmit={handleSubmit}>
+        <label htmlFor="ingredients" className="label">
           Ingredients:
-          <input
-            type="text"
-            value={ingredients}
-            onChange={(e) => setIngredients(e.target.value)}
-            placeholder="e.g., chicken, rice, salt"
-          />
         </label>
-        <button type="submit">Generate Recipe</button>
+        <input
+          type="text"
+          id="ingredients"
+          value={ingredients}
+          onChange={(e) => setIngredients(e.target.value)}
+          placeholder="e.g., chicken, rice, salt"
+          className="input"
+        />
+        <button type="submit" className="button">
+          Generate Recipe
+        </button>
       </form>
 
       {recipe && (
-        <div>
+        <div className="output success">
           <h2>Your Recipe</h2>
           <p>{recipe}</p>
         </div>
       )}
 
       {error && (
-        <div>
+        <div className="output error">
           <h2>Error</h2>
           <p>{error}</p>
         </div>
