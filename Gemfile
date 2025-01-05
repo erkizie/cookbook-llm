@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv'
 gem 'pry'
+gem 'rack-cors', require: 'rack/cors'
 gem 'rack-test'
 gem 'sinatra'
 gem 'sinatra-contrib'

@@ -57,6 +57,8 @@ GEM
       method_source (~> 1.0)
     public_suffix (6.0.1)
     rack (3.1.8)
+    rack-cors (2.0.2)
+      rack (>= 2.0.0)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -113,6 +115,7 @@ DEPENDENCIES
   dotenv
   groq (~> 0.3.2)
   pry
+  rack-cors
   rack-test
   rspec
   sinatra
