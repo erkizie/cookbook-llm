@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:51:59 GMT
+      - Sun, 05 Jan 2025 14:16:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -34,7 +34,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcbb4ddf8f8bf21-WAW
+      - 8fd415f3dd57bbdc-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -52,28 +52,30 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14399'
+      - '14387'
       X-Ratelimit-Remaining-Tokens:
-      - '4930'
+      - '2438'
       X-Ratelimit-Reset-Requests:
-      - 6s
+      - 1m17.039s
       X-Ratelimit-Reset-Tokens:
-      - 840ms
+      - 30.733s
       X-Request-Id:
-      - req_01jgrschs7fh6v2qa5q2nwtq1s
+      - req_01jgvd5x6jf1n8feq289fbr816
       Set-Cookie:
-      - __cf_bm=f2IjvRRbaTdVaBKx4nM22TeUDiNfBIOB5e6GRRclXjM-1735998719-1.0.1.1-mCb9aWackiM3GP4l4VznShKyqSW_psebIw3JokicJ5mHNp201OlnUWb66puW9Og2jr5RaKu32JhqySTlDQpVKg;
-        path=/; expires=Sat, 04-Jan-25 14:21:59 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=EBQnplFpqydoV24Q5I1nQzx5dKgvA6xIW2I6..SBZis-1736086582-1.0.1.1-De5vnyGEem5ipFhoPgMI45Bd1DM7HBgCkUhUQ_VVV.mhpWEZa6MZvpd0kn1cvW79CE2knN8Y_KHKT56xUMhuAg;
+        path=/; expires=Sun, 05-Jan-25 14:46:22 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-c4707a35-9739-4f4d-ae2b-7efb51e075da","object":"chat.completion","created":1735998719,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
-        recipe is accepted. It provides instructions on how to cook chicken and rice
-        using the given ingredients: chicken, rice, and salt (which can be used in
-        cooking the chicken and/or rice)."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.022116309,"prompt_tokens":70,"prompt_time":0.007800448,"completion_tokens":41,"completion_time":0.06386533,"total_tokens":111,"total_time":0.071665778},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrschs7fh6v2qa5q2nwtq1s"}}
+      string: '{"id":"chatcmpl-3b92066b-7163-4d88-b4df-ac8852b2f18f","object":"chat.completion","created":1736086582,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
+        recipe is accepted because it only includes the ingredients that were given:
+        chicken, rice, and salt. The steps to boil the rice and cook the chicken are
+        valid ways to prepare those ingredients. Salt was not mentioned in the steps,
+        but it can be assumed that it would be added to taste during the mixing or
+        cooking process."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.024388237,"prompt_tokens":70,"prompt_time":0.006205053,"completion_tokens":68,"completion_time":0.10749148,"total_tokens":138,"total_time":0.113696533},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5x6jf1n8feq289fbr816"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 13:51:59 GMT
+  recorded_at: Sun, 05 Jan 2025 14:16:22 GMT
 recorded_with: VCR 6.3.1

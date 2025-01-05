@@ -26,14 +26,24 @@ RSpec.describe Recipes::Groq::RecipeGenerate, :vcr do
     end
 
     context 'when ingredient validation fails' do
-      before do
-        allow_any_instance_of(Recipes::Groq::IngredientsValidate).to receive(:call).and_return(
-          instance_double(BaseService, success?: false, errors: ['The input does not contain valid ingredients.'])
+      let(:ingredients_validation_service) do
+        instance_double(
+          Recipes::Groq::IngredientsValidate,
+          call: nil,
+          success?: false,
+          errors: ['The input does not contain valid ingredients.']
         )
+      end
+
+      before do
+        allow(Recipes::Groq::IngredientsValidate).to receive(:new).with(ingredients).and_return(ingredients_validation_service)
       end
 
       it 'fails with ingredient validation error' do
         service.call(ingredients)
+
+        expect(ingredients_validation_service).to have_received(:call)
+
         expect(service.success?).to eq(false)
         expect(service.errors).to include('The input does not contain valid ingredients.')
         expect(service.recipe).to be_nil
@@ -41,53 +51,38 @@ RSpec.describe Recipes::Groq::RecipeGenerate, :vcr do
     end
 
     context 'when recipe validation fails' do
+      let(:ingredients_validation_service) do
+        instance_double(
+          Recipes::Groq::IngredientsValidate,
+          call: nil,
+          success?: true,
+          errors: []
+        )
+      end
+
+      let(:recipe_validation_service) do
+        instance_double(
+          Recipes::Groq::RecipeValidate,
+          call: nil,
+          success?: false,
+          errors: ['The recipe does not match ingredients.']
+        )
+      end
+
       before do
-        allow_any_instance_of(Recipes::Groq::IngredientsValidate).to receive(:call).and_return(
-          instance_double(BaseService, success?: true, errors: [])
-        )
-        allow_any_instance_of(Recipes::Groq::RecipeValidate).to receive(:call).and_return(
-          instance_double(BaseService, success?: false, errors: ['Recipe does not match ingredients'])
-        )
+        allow(Recipes::Groq::IngredientsValidate).to receive(:new).with(ingredients).and_return(ingredients_validation_service)
+        allow(Recipes::Groq::RecipeValidate).to receive(:new).with(anything,
+                                                                   ingredients).and_return(recipe_validation_service)
       end
 
       it 'fails with recipe validation error' do
         service.call(ingredients)
+
+        expect(ingredients_validation_service).to have_received(:call)
+        expect(recipe_validation_service).to have_received(:call)
+
         expect(service.success?).to eq(false)
-        expect(service.errors).to include('Recipe does not match ingredients')
-      end
-    end
-
-    context 'when the ingredients are empty' do
-      let(:ingredients) { '' }
-
-      before do
-        allow_any_instance_of(Recipes::Groq::IngredientsValidate).to receive(:call).and_return(
-          instance_double(BaseService, success?: false, errors: ['Ingredients cannot be empty'])
-        )
-      end
-
-      it 'fails with an ingredient validation error' do
-        service.call(ingredients)
-        expect(service.success?).to eq(false)
-        expect(service.errors).to include('Ingredients cannot be empty')
-        expect(service.recipe).to be_nil
-      end
-    end
-
-    context 'when the ingredients are nil' do
-      let(:ingredients) { nil }
-
-      before do
-        allow_any_instance_of(Recipes::Groq::IngredientsValidate).to receive(:call).and_return(
-          instance_double(BaseService, success?: false, errors: ['Ingredients cannot be nil'])
-        )
-      end
-
-      it 'fails with an ingredient validation error' do
-        service.call(ingredients)
-        expect(service.success?).to eq(false)
-        expect(service.errors).to include('Ingredients cannot be nil')
-        expect(service.recipe).to be_nil
+        expect(service.errors).to include('The recipe does not match ingredients.')
       end
     end
 

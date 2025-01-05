@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:51:24 GMT
+      - Sun, 05 Jan 2025 14:16:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcbb3f86defee3c-WAW
+      - 8fd415edc89ec3dd-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,48 +50,42 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14398'
+      - '14388'
       X-Ratelimit-Remaining-Tokens:
-      - '4784'
+      - '2794'
       X-Ratelimit-Reset-Requests:
-      - 10.739s
+      - 1m10.918999999s
       X-Ratelimit-Reset-Tokens:
-      - 2.586s
+      - 26.469s
       X-Request-Id:
-      - req_01jgrsbeb8e67ssjsj97hjf7p4
+      - req_01jgvd5w8fe8z97ed8bg2vqxae
       Set-Cookie:
-      - __cf_bm=iBk.hR9XQ5pEWGdH.RBSE424kT3IxSn2KMEB8ew1VGU-1735998684-1.0.1.1-wS_3f3r5ltobsoNZIpqSJ7sFOm1dGFRtui3LfbouhES1plAZsAh2bV.1qPve57YD12hdRaVBHWemkOwrG.a18g;
-        path=/; expires=Sat, 04-Jan-25 14:21:24 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=GNmCASeMDtkDhBeqCtILmXvkQtQ4dcjqKR.G6Va7XJ4-1736086582-1.0.1.1-cZvPzUF9JfgQMDRlsiv36S_6Z83WKTLZvp2tHpLOQM0C4cZ92y1muwRLu1ssLGg27zDRuIZgU58G45FCFAnCIA;
+        path=/; expires=Sun, 05-Jan-25 14:46:22 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-6f9d1276-e2d8-4a71-96bb-15d3b0abcee0","object":"chat.completion","created":1735998683,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
-        here''s a simple recipe for chicken and rice using just those ingredients:\n\nIngredients:\n\n*
-        1 pound boneless, skinless chicken breasts or thighs\n* 1 cup uncooked white
-        rice\n* Salt, to taste\n\nInstructions:\n\n1. Rinse the chicken and pat it
-        dry with paper towels. Cut the chicken into bite-sized pieces.\n2. Heat a
-        large skillet over medium-high heat. Add the chicken to the skillet and cook
-        until it is browned on all sides and cooked through, about 5-7 minutes.\n3.
-        While the chicken is cooking, rinse the rice in a fine-mesh strainer under
-        cold running water.\n4. When the chicken is cooked, remove it from the skillet
-        and set it aside on a plate.\n5. In the same skillet, add the rinsed rice
-        and stir it around for a minute or two to toast it slightly.\n6. Add 2 cups
-        of water to the skillet and stir to combine with the rice. Bring the water
-        to a boil.\n7. Once the water is boiling, reduce the heat to low, cover the
-        skillet, and let the rice simmer for 15-20 minutes, or until it has absorbed
-        all of the water and is fully cooked.\n8. Fluff the cooked rice with a fork
-        and add the cooked chicken back into the skillet. Stir to combine.\n9. Season
-        the chicken and rice with salt, to taste.\n10. Serve hot and enjoy!\n\nOptional
-        variations:\nYou can add other ingredients to this basic recipe to give it
-        more flavor. Here are a few ideas:\n\n* Add some chopped onions or garlic
-        to the skillet when you cook the chicken.\n* Stir in some chopped vegetables,
-        such as bell peppers, carrots, or peas, when you add the chicken back into
-        the skillet.\n* Sprinkle some dried herbs, such as thyme or rosemary, over
-        the rice and chicken before serving.\n* Drizzle some olive oil or butter over
-        the cooked rice and chicken for added richness."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.028065084,"prompt_tokens":26,"prompt_time":0.002896152,"completion_tokens":467,"completion_time":0.745545101,"total_tokens":493,"total_time":0.748441253},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrsbeb8e67ssjsj97hjf7p4"}}
+      string: '{"id":"chatcmpl-67ede5e3-6e89-42f1-ba97-f4d9a2533112","object":"chat.completion","created":1736086581,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple recipe for chicken and rice using those ingredients:\n\nIngredients:\n\n*
+        1 pound boneless, skinless chicken breasts or thighs\n* 1 cup long-grain white
+        rice\n* 1 teaspoon salt (plus more to taste)\n* 2 cups water\n* 2 tablespoons
+        olive oil\n\nInstructions:\n\n1. Cut the chicken into bite-sized pieces and
+        season with a pinch of salt.\n2. Heat the olive oil in a large skillet over
+        medium-high heat. Add the chicken and cook until browned on all sides, about
+        5-7 minutes.\n3. Remove the chicken from the skillet and set aside.\n4. Add
+        the rice to the skillet and cook, stirring constantly, until lightly toasted,
+        about 2-3 minutes.\n5. Add the water and 1 teaspoon of salt to the skillet.
+        Stir to combine and bring to a boil.\n6. Reduce the heat to low, cover, and
+        let the rice simmer for 15-20 minutes, or until the water is absorbed and
+        the rice is tender.\n7. Fluff the rice with a fork and stir in the cooked
+        chicken.\n8. Taste and adjust the seasoning with more salt if needed.\n9.
+        Serve hot and enjoy!\n\nOptional variations:\nYou can add other ingredients
+        such as diced onions, garlic, bell peppers, or chopped herbs like parsley
+        or cilantro to the skillet when cooking the rice for extra flavor. You can
+        also stir in some shredded cheese at the end for a cheesy twist."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.026668546,"prompt_tokens":26,"prompt_time":0.003483231,"completion_tokens":365,"completion_time":0.586405648,"total_tokens":391,"total_time":0.589888879},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5w8fe8z97ed8bg2vqxae"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 13:51:24 GMT
+  recorded_at: Sun, 05 Jan 2025 14:16:22 GMT
 recorded_with: VCR 6.3.1

@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:51:22 GMT
+      - Sun, 05 Jan 2025 14:16:21 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcbb3f34c76c019-WAW
+      - 8fd415e709f7bfda-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,37 +50,24 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14399'
+      - '14389'
       X-Ratelimit-Remaining-Tokens:
-      - '4974'
+      - '3203'
       X-Ratelimit-Reset-Requests:
-      - 6s
+      - 1m5.59s
       X-Ratelimit-Reset-Tokens:
-      - 312ms
+      - 21.555s
       X-Request-Id:
-      - req_01jgrsbd3tet9aq3yk6a81s83t
+      - req_01jgvd5v6qed8sznd19d1g4tas
       Set-Cookie:
-      - __cf_bm=TpdLxW3yWqfwGzJSkmqfoNHTeSBbDxjce0dHc74WXow-1735998682-1.0.1.1-RFhu_0f1g.3te5Wadc7Zcw78btTRwz6j77QujAE8.EUJXN_XOd63wPtnFKXd9M.x4xbtaH7KvHhMc1he2yGnxg;
-        path=/; expires=Sat, 04-Jan-25 14:21:22 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=vwVjrMu56XTg_owV09ZCNzxbsTNTbEigpxw3X.ijtsg-1736086581-1.0.1.1-oxMhGpNSZX3aMm.BjXu0lziiAvVLAWd9i1rbu0U97EZhyMWl.216ogcdPD5jj6wQB7dKSlBdJ.26mjxRAjbKng;
+        path=/; expires=Sun, 05-Jan-25 14:46:21 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-9aaf7826-458a-4327-80b9-9330be33afee","object":"chat.completion","created":1735998682,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Here
-        is a simple recipe for Chicken and Rice using the ingredients you provided:\n\nIngredients:\n\n*
-        1 pound boneless, skinless chicken breasts or thighs\n* 1 cup long-grain white
-        rice\n* 1 teaspoon salt\n* 2 cups water\n\nInstructions:\n\n1. Cut the chicken
-        into bite-sized pieces and season with salt.\n2. Rinse the rice in a fine-mesh
-        strainer and shake off excess water.\n3. Heat a large skillet over medium-high
-        heat. Once hot, add the chicken and cook until browned on all sides, about
-        5-7 minutes.\n4. Add the rinsed rice to the skillet with the chicken and stir
-        to combine.\n5. Pour in the water and bring to a boil. Once boiling, reduce
-        heat to low, cover and simmer for 18-20 minutes, or until the rice is cooked
-        and the liquid is fully absorbed.\n6. Fluff the chicken and rice with a fork
-        and serve hot.\n\nYou can also add some vegetables like peas, carrots or bell
-        peppers for more flavor and nutrition. Enjoy your meal!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.026029696999999997,"prompt_tokens":26,"prompt_time":0.002654023,"completion_tokens":258,"completion_time":0.41178449,"total_tokens":284,"total_time":0.414438513},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrsbd3tet9aq3yk6a81s83t"}}
-
-        '
-  recorded_at: Sat, 04 Jan 2025 13:51:22 GMT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLWYwMTQ3ZmMyLTUwOGEtNDM5Yi1iY2Q2LTk0NDAxMzJmY2VlZiIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzYwODY1ODAsIm1vZGVsIjoibWl4dHJhbC04eDdiLTMyNzY4IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsImNvbnRlbnQiOiJTdXJlLCBoZXJlJ3MgYSBzaW1wbGUgcmVjaXBlIGZvciBDaGlja2VuIGFuZCBSaWNlIHVzaW5nIGp1c3QgdGhvc2UgdGhyZWUgaW5ncmVkaWVudHM6XG5cbkluZ3JlZGllbnRzOlxuXG4qIDEgbGIgYm9uZWxlc3MsIHNraW5sZXNzIGNoaWNrZW4gYnJlYXN0cyBvciB0aGlnaHNcbiogMSBjdXAgdW5jb29rZWQgd2hpdGUgcmljZVxuKiBTYWx0LCB0byB0YXN0ZVxuXG5JbnN0cnVjdGlvbnM6XG5cbjEuIFJpbnNlIHRoZSByaWNlIHVuZGVyIGNvbGQgd2F0ZXIgdW50aWwgdGhlIHdhdGVyIHJ1bnMgY2xlYXIuIFRoaXMgaGVscHMgdG8gcmVtb3ZlIGV4Y2VzcyBzdGFyY2ggYW5kIHByZXZlbnQgdGhlIHJpY2UgZnJvbSBjbHVtcGluZyB0b2dldGhlci5cblxuMi4gUGxhY2UgdGhlIHJpY2UgaW4gYSBzYXVjZXBhbiBhbmQgYWRkIDIgY3VwcyBvZiB3YXRlci4gQnJpbmcgdGhlIHdhdGVyIHRvIGEgYm9pbCwgdGhlbiByZWR1Y2UgdGhlIGhlYXQgdG8gbG93LCBjb3ZlciB0aGUgc2F1Y2VwYW4sIGFuZCBsZXQgdGhlIHJpY2Ugc2ltbWVyIGZvciAxOC0yMCBtaW51dGVzLCBvciB1bnRpbCBhbGwgdGhlIHdhdGVyIGlzIGFic29yYmVkIGFuZCB0aGUgcmljZSBpcyB0ZW5kZXIuXG5cbjMuIFdoaWxlIHRoZSByaWNlIGlzIGNvb2tpbmcsIGN1dCB0aGUgY2hpY2tlbiBpbnRvIGJpdGUtc2l6ZWQgcGllY2VzLlxuXG40LiBIZWF0IGEgbGFyZ2Ugc2tpbGxldCBvdmVyIG1lZGl1bS1oaWdoIGhlYXQuIEFkZCB0aGUgY2hpY2tlbiBwaWVjZXMgdG8gdGhlIHNraWxsZXQgYW5kIGNvb2sgZm9yIDUtNyBtaW51dGVzLCBvciB1bnRpbCB0aGV5IGFyZSBicm93bmVkIG9uIGFsbCBzaWRlcyBhbmQgY29va2VkIHRocm91Z2guXG5cbjUuIFNlYXNvbiB0aGUgY2hpY2tlbiB3aXRoIHNhbHQgdG8gdGFzdGUuXG5cbjYuIE9uY2UgdGhlIHJpY2UgaXMgY29va2VkLCBmbHVmZiBpdCB3aXRoIGEgZm9yayBhbmQgdHJhbnNmZXIgaXQgdG8gYSBzZXJ2aW5nIGRpc2guXG5cbjcuIFRvcCB0aGUgcmljZSB3aXRoIHRoZSBjb29rZWQgY2hpY2tlbi5cblxuOC4gU2VydmUgdGhlIGNoaWNrZW4gYW5kIHJpY2UgaG90LCB3aXRoIGFkZGl0aW9uYWwgc2FsdCBvbiB0aGUgc2lkZSBpZiBuZWVkZWQuXG5cbk9wdGlvbmFsIFZhcmlhdGlvbnM6XG5Zb3UgY2FuIGFkZCBhZGRpdGlvbmFsIGluZ3JlZGllbnRzIHRvIHRoaXMgcmVjaXBlIHRvIGdpdmUgaXQgbW9yZSBmbGF2b3IgYW5kIHZhcmlldHkuIEhlcmUgYXJlIGEgZmV3IGlkZWFzOlxuXG4qIEFkZCBzb21lIGRpY2VkIG9uaW9ucyBhbmQgZ2FybGljIHRvIHRoZSBza2lsbGV0IHdoZW4gY29va2luZyB0aGUgY2hpY2tlbiBmb3IgYWRkZWQgZmxhdm9yLlxuKiBTdGlyIGluIHNvbWUgY2hvcHBlZCBoZXJicyAoc3VjaCBhcyBwYXJzbGV5LCBjaWxhbnRybywgb3IgdGh5bWUpIHRvIHRoZSBjb29rZWQgcmljZSBiZWZvcmUgc2VydmluZy5cbiogU3ByaW5rbGUgc29tZSBncmF0ZWQgY2hlZXNlIG9uIHRvcCBvZiB0aGUgY2hpY2tlbiBhbmQgcmljZSBiZWZvcmUgc2VydmluZy5cbiogQWRkIHNvbWUgc2F1dMOpZWQgdmVnZXRhYmxlcyAoc3VjaCBhcyBiZWxsIHBlcHBlcnMsIHp1Y2NoaW5pLCBvciBjYXJyb3RzKSB0byB0aGUgc2tpbGxldCB3aGVuIGNvb2tpbmcgdGhlIGNoaWNrZW4uXG4qIFN1YnN0aXR1dGUgYnJvd24gcmljZSBmb3Igd2hpdGUgcmljZSBmb3IgYSBoZWFsdGhpZXIgYWx0ZXJuYXRpdmUuXG4qIEFkZCBzb21lIGNoaWNrZW4gYnJvdGggb3Igc3RvY2sgdG8gdGhlIHJpY2Ugd2hlbiBjb29raW5nIGl0IGZvciBhZGRlZCBmbGF2b3IuIn0sImxvZ3Byb2JzIjpudWxsLCJmaW5pc2hfcmVhc29uIjoic3RvcCJ9XSwidXNhZ2UiOnsicXVldWVfdGltZSI6MC4wMjc0ODA5NzIsInByb21wdF90b2tlbnMiOjI2LCJwcm9tcHRfdGltZSI6MC4wMDI1NDk4NjMsImNvbXBsZXRpb25fdG9rZW5zIjo0NzIsImNvbXBsZXRpb25fdGltZSI6MC43NTY5NzQwMjgsInRvdGFsX3Rva2VucyI6NDk4LCJ0b3RhbF90aW1lIjowLjc1OTUyMzg5MX0sInN5c3RlbV9maW5nZXJwcmludCI6ImZwX2M1ZjIwYjViYjEiLCJ4X2dyb3EiOnsiaWQiOiJyZXFfMDFqZ3ZkNXY2cWVkOHN6bmQxOWQxZzR0YXMifX0K
+  recorded_at: Sun, 05 Jan 2025 14:16:21 GMT
 recorded_with: VCR 6.3.1

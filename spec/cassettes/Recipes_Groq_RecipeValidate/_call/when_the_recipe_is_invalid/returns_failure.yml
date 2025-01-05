@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 13:52:00 GMT
+      - Sun, 05 Jan 2025 14:16:23 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -34,7 +34,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fcbb4e05bbcee3a-WAW
+      - 8fd415f69929ecb6-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -52,28 +52,28 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14398'
+      - '14386'
       X-Ratelimit-Remaining-Tokens:
-      - '4857'
+      - '2343'
       X-Ratelimit-Reset-Requests:
-      - 11.611999999s
+      - 1m23.561999999s
       X-Ratelimit-Reset-Tokens:
-      - 1.716s
+      - 31.879s
       X-Request-Id:
-      - req_01jgrscj59fwcacm1kdr9tjetr
+      - req_01jgvd5xmae88r5xmkj7fkda1w
       Set-Cookie:
-      - __cf_bm=2cngIPSY7wjJ9aE.lm7CT._qIqMMlOaK5udmuX.v7XY-1735998720-1.0.1.1-TwTW04Gu._XA5xUHeEbmWva83xQAuy7ij3_CTyvjOzP09vRSMvKx9LnwYTA4UZQZL88Ir.k2y1KPexybLVfIzQ;
-        path=/; expires=Sat, 04-Jan-25 14:22:00 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=vvYzRThjWIV2H.uMgxpbG1W3Q.U8_BCMeSsrYMBRQpA-1736086583-1.0.1.1-hkMb8bAosIoB9N2ud0IVfSO13idfOU5CFeb22gy0VevSqp2B01eJO2KxKhSkKv_QgCUkyEGGTmijwC9ofMbXcA;
+        path=/; expires=Sun, 05-Jan-25 14:46:23 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-e9532076-ec2c-4c46-bfd2-0411af778f39","object":"chat.completion","created":1735998720,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
-        recipe is rejected because it does not match the provided ingredients. The
-        recipe calls for pasta and cheese which are not part of the list of ingredients
-        that includes chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.023680677999999997,"prompt_tokens":64,"prompt_time":0.005075457,"completion_tokens":40,"completion_time":0.062523163,"total_tokens":104,"total_time":0.06759862},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrscj59fwcacm1kdr9tjetr"}}
+      string: '{"id":"chatcmpl-ee0d5c07-81ac-4a65-a783-88cc8cc716c3","object":"chat.completion","created":1736086582,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
+        recipe is rejected because it does not match the given ingredients. The recipe
+        calls for pasta and cheese which are not listed in the ingredients. The ingredients
+        consist of chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.024798296,"prompt_tokens":64,"prompt_time":0.005801694,"completion_tokens":41,"completion_time":0.064687186,"total_tokens":105,"total_time":0.07048888},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5xmae88r5xmkj7fkda1w"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 13:52:00 GMT
+  recorded_at: Sun, 05 Jan 2025 14:16:23 GMT
 recorded_with: VCR 6.3.1

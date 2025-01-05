@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 04 Jan 2025 10:30:18 GMT
+      - Sun, 05 Jan 2025 14:16:18 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fca8d676d6a024c-WAW
+      - 8fd415d30ff1eeb9-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,43 +50,47 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14399'
+      - '14396'
       X-Ratelimit-Remaining-Tokens:
-      - '4984'
+      - '4105'
       X-Ratelimit-Reset-Requests:
-      - 6s
+      - 23.573s
       X-Ratelimit-Reset-Tokens:
-      - 192ms
+      - 10.74s
       X-Request-Id:
-      - req_01jgrdv789e5va7ns083abt6ae
+      - req_01jgvd5r26fyntwtys79s46j0m
       Set-Cookie:
-      - __cf_bm=sD2kK_hByP9swiD7eY90fGadE5Fn4t.krCkMswdvq2w-1735986618-1.0.1.1-MXdtE6iN5EY4gf3iydC6bThAAb.9aBDAKMX7OSotCMUOf7HwTNGh6I3ewvYEFhE5QkHBcZ3qNaInNAOCq0XA_w;
-        path=/; expires=Sat, 04-Jan-25 11:00:18 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=ZiMQzDxtdKQsbD1OLvvwxB0DdbaoEoNmVV0AD.HfY0g-1736086578-1.0.1.1-SahLHPKOUMkUrWFOso4SvYc8s0c_Ws.aSv61MxqWqQtDVpBR7j_UJEDmuGV._7U2jaB9ZF02fxlI6915FzztYQ;
+        path=/; expires=Sun, 05-Jan-25 14:46:18 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-ff627281-1743-439e-a324-df20409b4ec9","object":"chat.completion","created":1735986617,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+      string: '{"id":"chatcmpl-28581279-8518-407f-8157-6f7e6b7055ca","object":"chat.completion","created":1736086577,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
         here''s a simple and delicious recipe for chicken and rice:\n\nIngredients:\n\n*
         1 1/2 pounds boneless, skinless chicken breasts or thighs, cut into bite-sized
-        pieces\n* 1 tablespoon olive oil\n* 1 onion, chopped\n* 3 cloves garlic, minced\n*
-        1 red bell pepper, chopped\n* 1 cup long-grain white rice\n* 2 cups chicken
-        broth\n* 1 can diced tomatoes, drained\n* 1 teaspoon paprika\n* 1 teaspoon
-        cumin\n* 1/2 teaspoon salt\n* 1/4 teaspoon black pepper\n* 1/4 cup chopped
-        fresh cilantro\n* Juice of 1 lime\n\nInstructions:\n\n1. Heat the olive oil
-        in a large skillet over medium-high heat. Add the chicken and cook until browned
-        on all sides, about 5 minutes. Remove the chicken from the skillet and set
-        aside.\n2. Add the onion, garlic, and bell pepper to the skillet and cook
-        until the onion is softened, about 5 minutes.\n3. Stir in the rice and cook
-        for 1 minute.\n4. Add the chicken broth, diced tomatoes, paprika, cumin, salt,
-        and black pepper. Bring the mixture to a boil, then reduce the heat to low
-        and simmer, covered, for 18-20 minutes, or until the rice is tender and the
-        liquid has been absorbed.\n5. Stir in the cooked chicken, cilantro, and lime
-        juice. Cook for 2-3 minutes, or until the chicken is heated through.\n6. Taste
-        and adjust the seasoning as needed. Serve hot.\n\nEnjoy your delicious chicken
-        and rice!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.030228956999999997,"prompt_tokens":16,"prompt_time":0.00230212,"completion_tokens":403,"completion_time":0.644437192,"total_tokens":419,"total_time":0.646739312},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgrdv789e5va7ns083abt6ae"}}
+        pieces\n* 1 cup uncooked long-grain white rice\n* 2 cups low-sodium chicken
+        broth\n* 1 cup water\n* 1 onion, chopped\n* 2 cloves garlic, minced\n* 1 bell
+        pepper, chopped (optional)\n* 1 carrot, chopped (optional)\n* 2 tablespoons
+        olive oil\n* 1 teaspoon paprika\n* 1 teaspoon dried oregano\n* 1 teaspoon
+        dried thyme\n* Salt and pepper, to taste\n* Fresh parsley, chopped (for garnish)\n\nInstructions:\n\n1.
+        Heat the olive oil in a large skillet or Dutch oven over medium-high heat.
+        Add the chicken and cook until browned on all sides, about 5-7 minutes. Remove
+        the chicken from the skillet and set aside.\n2. Add the chopped onion, garlic,
+        bell pepper, and carrot (if using) to the skillet. Cook until the vegetables
+        are softened and fragrant, about 3-5 minutes.\n3. Add the paprika, oregano,
+        thyme, salt, and pepper to the skillet. Stir to combine and cook for 1 minute.\n4.
+        Add the rice to the skillet and cook for 2-3 minutes, stirring frequently,
+        until the rice is lightly toasted.\n5. Add the chicken broth and water to
+        the skillet, stirring to scrape up any browned bits from the bottom of the
+        skillet.\n6. Bring the mixture to a boil, then reduce the heat to low and
+        simmer, covered, for 15-20 minutes, or until the rice is cooked and has absorbed
+        most of the liquid.\n7. Add the chicken back to the skillet and stir to combine.
+        Cook for an additional 5 minutes, or until the chicken is cooked through.\n8.
+        Taste and adjust the seasoning as needed.\n9. Serve the chicken and rice hot,
+        garnished with chopped fresh parsley.\n\nEnjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.028211276,"prompt_tokens":16,"prompt_time":0.002174264,"completion_tokens":498,"completion_time":0.80059249,"total_tokens":514,"total_time":0.802766754},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5r26fyntwtys79s46j0m"}}
 
         '
-  recorded_at: Sat, 04 Jan 2025 10:30:18 GMT
+  recorded_at: Sun, 05 Jan 2025 14:16:18 GMT
 recorded_with: VCR 6.3.1
