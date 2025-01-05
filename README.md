@@ -17,6 +17,7 @@ Cookbook LLM is a back-end application designed to generate step-by-step recipes
 - **Ruby**
 - **Sinatra**
 - **RSpec** (for testing)
+- **React** (for the front-end application)
 
 ---
 
@@ -28,8 +29,11 @@ Ensure you have the following installed:
 
 - Ruby (>= 3.0.0)
 - Bundler
+- Node.js and npm (for React front-end application)
 
 ### Steps to Run the Project
+
+#### Back-End Setup
 
 1. **Clone the Repository**
 
@@ -69,6 +73,28 @@ Ensure you have the following installed:
    curl -X POST -H "Host: localhost" -d "ingredients=chicken,rice,salt" http://localhost:9292/generate_recipe
    ```
 
+#### Front-End Setup
+
+1. **Navigate to the React Application Directory**
+
+   ```bash
+   cd client
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application**
+
+   ```bash
+   npm start
+   ```
+
+   By default, the React application runs on [http://localhost:3000](http://localhost:3000). Ensure the back-end server is running to interact with the API.
+
 ---
 
 ## API Endpoints
@@ -78,7 +104,7 @@ Ensure you have the following installed:
 #### Request
 
 - **Parameters:**
-  - `ingredients` (string): Comma-separated list of ingredients.
+  - `ingredients` (string): List of ingredients.
 
 #### Response
 
@@ -138,6 +164,11 @@ Ensure you have the following installed:
 │   │   │   ├── recipe_generate.rb
 │   │   │   └── recipe_validate.rb
 │   │   └── recipe_generate.rb # High-level recipe generator
+├── client/                    # React front-end application
+│   ├── public/                # Public static files
+│   └── src/                   # React source files
+│       ├── App.js             # Main React component
+│       └── index.js           # React entry point
 ├── spec/                      # Test suite
 │   ├── controllers/           # Controller tests
 │   ├── lib/                   # Library tests
