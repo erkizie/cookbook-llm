@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Jan 2025 14:16:22 GMT
+      - Sun, 05 Jan 2025 15:50:08 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fd415edc89ec3dd-WAW
+      - 8fd49f48f822c04c-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,42 +50,50 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14388'
+      - '14384'
       X-Ratelimit-Remaining-Tokens:
-      - '2794'
+      - '1148'
       X-Ratelimit-Reset-Requests:
-      - 1m10.918999999s
+      - 1m35.104s
       X-Ratelimit-Reset-Tokens:
-      - 26.469s
+      - 46.223s
       X-Request-Id:
-      - req_01jgvd5w8fe8z97ed8bg2vqxae
+      - req_01jgvjhjgsej297mra39er3wgz
       Set-Cookie:
-      - __cf_bm=GNmCASeMDtkDhBeqCtILmXvkQtQ4dcjqKR.G6Va7XJ4-1736086582-1.0.1.1-cZvPzUF9JfgQMDRlsiv36S_6Z83WKTLZvp2tHpLOQM0C4cZ92y1muwRLu1ssLGg27zDRuIZgU58G45FCFAnCIA;
-        path=/; expires=Sun, 05-Jan-25 14:46:22 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=h4KnznquoLhnHuMyYcqsMgyZ05E4S2HXa.K68Q_fX4Q-1736092208-1.0.1.1-CqB92uCL_SeVrCEaFNHEP3T38wSvUKlaIBAlOd_2b1msMScEyZ3QujtoNc5uFLsNCCgbpgwrNkwG.0K1l7Lang;
+        path=/; expires=Sun, 05-Jan-25 16:20:08 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-67ede5e3-6e89-42f1-ba97-f4d9a2533112","object":"chat.completion","created":1736086581,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
-        here''s a simple recipe for chicken and rice using those ingredients:\n\nIngredients:\n\n*
-        1 pound boneless, skinless chicken breasts or thighs\n* 1 cup long-grain white
-        rice\n* 1 teaspoon salt (plus more to taste)\n* 2 cups water\n* 2 tablespoons
-        olive oil\n\nInstructions:\n\n1. Cut the chicken into bite-sized pieces and
-        season with a pinch of salt.\n2. Heat the olive oil in a large skillet over
-        medium-high heat. Add the chicken and cook until browned on all sides, about
-        5-7 minutes.\n3. Remove the chicken from the skillet and set aside.\n4. Add
-        the rice to the skillet and cook, stirring constantly, until lightly toasted,
-        about 2-3 minutes.\n5. Add the water and 1 teaspoon of salt to the skillet.
-        Stir to combine and bring to a boil.\n6. Reduce the heat to low, cover, and
-        let the rice simmer for 15-20 minutes, or until the water is absorbed and
-        the rice is tender.\n7. Fluff the rice with a fork and stir in the cooked
-        chicken.\n8. Taste and adjust the seasoning with more salt if needed.\n9.
-        Serve hot and enjoy!\n\nOptional variations:\nYou can add other ingredients
-        such as diced onions, garlic, bell peppers, or chopped herbs like parsley
-        or cilantro to the skillet when cooking the rice for extra flavor. You can
-        also stir in some shredded cheese at the end for a cheesy twist."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.026668546,"prompt_tokens":26,"prompt_time":0.003483231,"completion_tokens":365,"completion_time":0.586405648,"total_tokens":391,"total_time":0.589888879},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5w8fe8z97ed8bg2vqxae"}}
+      string: '{"id":"chatcmpl-b1962fc1-06a4-46ce-b167-6b429c044492","object":"chat.completion","created":1736092207,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Recipe:
+        Simple Chicken and Rice\n\nIngredients:\n\n* 4 chicken breasts\n* 2 cups of
+        rice\n* Salt, to taste\n\nInstructions:\n\nStep 1: Gather all the ingredients
+        and cooking equipment\nMake sure you have all the necessary ingredients and
+        cooking equipment. You will need:\n\n* A cutting board\n* A sharp knife\n*
+        A large skillet or frying pan with a lid\n* Measuring cups\n* A spatula or
+        wooden spoon\n* A pot for cooking rice\n\nStep 2: Prepare the chicken\nPlace
+        the chicken breasts on the cutting board. Trim off any excess fat and cut
+        the chicken into bite-sized pieces. Season the chicken pieces with salt, to
+        taste.\n\nStep 3: Cook the chicken\nHeat the skillet or frying pan over medium
+        heat. Add a small amount of oil (if desired) and cook the chicken pieces until
+        they are cooked through and no longer pink in the middle. Once cooked, remove
+        the chicken from the skillet and set it aside.\n\nStep 4: Cook the rice\nWhile
+        the chicken is cooking, start preparing the rice. Rinse the rice in a fine-mesh
+        strainer under cold water until the water runs clear. This helps to remove
+        excess starch and prevent the rice from becoming too sticky. In a pot, combine
+        the rinsed rice with 4 cups of water and 1/2 teaspoon of salt. Bring the water
+        to a boil, then reduce the heat to low and cover the pot. Allow the rice to
+        simmer for 18-20 minutes, or until all the water is absorbed and the rice
+        is tender.\n\nStep 5: Combine the cooked chicken and rice\nOnce both the chicken
+        and rice are cooked, combine them in the skillet or frying pan. Stir gently
+        to combine the ingredients and warm everything through. Taste and adjust the
+        seasoning with additional salt, if necessary.\n\nStep 6: Serve and enjoy\nDivide
+        the chicken and rice mixture among plates and serve hot. You can garnish with
+        chopped herbs, such as parsley or cilantro, for added flavor and color. Enjoy
+        your simple and delicious meal!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.030329817000000002,"prompt_tokens":26,"prompt_time":0.002566722,"completion_tokens":479,"completion_time":0.765399246,"total_tokens":505,"total_time":0.767965968},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjhjgsej297mra39er3wgz"}}
 
         '
-  recorded_at: Sun, 05 Jan 2025 14:16:22 GMT
+  recorded_at: Sun, 05 Jan 2025 15:50:08 GMT
 recorded_with: VCR 6.3.1

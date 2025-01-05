@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Jan 2025 14:16:21 GMT
+      - Sun, 05 Jan 2025 15:50:07 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fd415e709f7bfda-WAW
+      - 8fd49f437889bf45-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,24 +50,42 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14389'
+      - '14385'
       X-Ratelimit-Remaining-Tokens:
-      - '3203'
+      - '1441'
       X-Ratelimit-Reset-Requests:
-      - 1m5.59s
+      - 1m29.69s
       X-Ratelimit-Reset-Tokens:
-      - 21.555s
+      - 42.704s
       X-Request-Id:
-      - req_01jgvd5v6qed8sznd19d1g4tas
+      - req_01jgvjhhmse309bctdvqznyzk9
       Set-Cookie:
-      - __cf_bm=vwVjrMu56XTg_owV09ZCNzxbsTNTbEigpxw3X.ijtsg-1736086581-1.0.1.1-oxMhGpNSZX3aMm.BjXu0lziiAvVLAWd9i1rbu0U97EZhyMWl.216ogcdPD5jj6wQB7dKSlBdJ.26mjxRAjbKng;
-        path=/; expires=Sun, 05-Jan-25 14:46:21 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=SYkIvzGteVJEbbPhc.uFzAQleXsqTxuOM4BKC6d.NCE-1736092207-1.0.1.1-rPQDRokyZEyw5yPEZP8nXSwB_uR18NIXdBI1T63EByS9MOULbuIpue1KELj3.5PvYOhMT0ADlUXDiEpYqOVCog;
+        path=/; expires=Sun, 05-Jan-25 16:20:07 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpZCI6ImNoYXRjbXBsLWYwMTQ3ZmMyLTUwOGEtNDM5Yi1iY2Q2LTk0NDAxMzJmY2VlZiIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzYwODY1ODAsIm1vZGVsIjoibWl4dHJhbC04eDdiLTMyNzY4IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsImNvbnRlbnQiOiJTdXJlLCBoZXJlJ3MgYSBzaW1wbGUgcmVjaXBlIGZvciBDaGlja2VuIGFuZCBSaWNlIHVzaW5nIGp1c3QgdGhvc2UgdGhyZWUgaW5ncmVkaWVudHM6XG5cbkluZ3JlZGllbnRzOlxuXG4qIDEgbGIgYm9uZWxlc3MsIHNraW5sZXNzIGNoaWNrZW4gYnJlYXN0cyBvciB0aGlnaHNcbiogMSBjdXAgdW5jb29rZWQgd2hpdGUgcmljZVxuKiBTYWx0LCB0byB0YXN0ZVxuXG5JbnN0cnVjdGlvbnM6XG5cbjEuIFJpbnNlIHRoZSByaWNlIHVuZGVyIGNvbGQgd2F0ZXIgdW50aWwgdGhlIHdhdGVyIHJ1bnMgY2xlYXIuIFRoaXMgaGVscHMgdG8gcmVtb3ZlIGV4Y2VzcyBzdGFyY2ggYW5kIHByZXZlbnQgdGhlIHJpY2UgZnJvbSBjbHVtcGluZyB0b2dldGhlci5cblxuMi4gUGxhY2UgdGhlIHJpY2UgaW4gYSBzYXVjZXBhbiBhbmQgYWRkIDIgY3VwcyBvZiB3YXRlci4gQnJpbmcgdGhlIHdhdGVyIHRvIGEgYm9pbCwgdGhlbiByZWR1Y2UgdGhlIGhlYXQgdG8gbG93LCBjb3ZlciB0aGUgc2F1Y2VwYW4sIGFuZCBsZXQgdGhlIHJpY2Ugc2ltbWVyIGZvciAxOC0yMCBtaW51dGVzLCBvciB1bnRpbCBhbGwgdGhlIHdhdGVyIGlzIGFic29yYmVkIGFuZCB0aGUgcmljZSBpcyB0ZW5kZXIuXG5cbjMuIFdoaWxlIHRoZSByaWNlIGlzIGNvb2tpbmcsIGN1dCB0aGUgY2hpY2tlbiBpbnRvIGJpdGUtc2l6ZWQgcGllY2VzLlxuXG40LiBIZWF0IGEgbGFyZ2Ugc2tpbGxldCBvdmVyIG1lZGl1bS1oaWdoIGhlYXQuIEFkZCB0aGUgY2hpY2tlbiBwaWVjZXMgdG8gdGhlIHNraWxsZXQgYW5kIGNvb2sgZm9yIDUtNyBtaW51dGVzLCBvciB1bnRpbCB0aGV5IGFyZSBicm93bmVkIG9uIGFsbCBzaWRlcyBhbmQgY29va2VkIHRocm91Z2guXG5cbjUuIFNlYXNvbiB0aGUgY2hpY2tlbiB3aXRoIHNhbHQgdG8gdGFzdGUuXG5cbjYuIE9uY2UgdGhlIHJpY2UgaXMgY29va2VkLCBmbHVmZiBpdCB3aXRoIGEgZm9yayBhbmQgdHJhbnNmZXIgaXQgdG8gYSBzZXJ2aW5nIGRpc2guXG5cbjcuIFRvcCB0aGUgcmljZSB3aXRoIHRoZSBjb29rZWQgY2hpY2tlbi5cblxuOC4gU2VydmUgdGhlIGNoaWNrZW4gYW5kIHJpY2UgaG90LCB3aXRoIGFkZGl0aW9uYWwgc2FsdCBvbiB0aGUgc2lkZSBpZiBuZWVkZWQuXG5cbk9wdGlvbmFsIFZhcmlhdGlvbnM6XG5Zb3UgY2FuIGFkZCBhZGRpdGlvbmFsIGluZ3JlZGllbnRzIHRvIHRoaXMgcmVjaXBlIHRvIGdpdmUgaXQgbW9yZSBmbGF2b3IgYW5kIHZhcmlldHkuIEhlcmUgYXJlIGEgZmV3IGlkZWFzOlxuXG4qIEFkZCBzb21lIGRpY2VkIG9uaW9ucyBhbmQgZ2FybGljIHRvIHRoZSBza2lsbGV0IHdoZW4gY29va2luZyB0aGUgY2hpY2tlbiBmb3IgYWRkZWQgZmxhdm9yLlxuKiBTdGlyIGluIHNvbWUgY2hvcHBlZCBoZXJicyAoc3VjaCBhcyBwYXJzbGV5LCBjaWxhbnRybywgb3IgdGh5bWUpIHRvIHRoZSBjb29rZWQgcmljZSBiZWZvcmUgc2VydmluZy5cbiogU3ByaW5rbGUgc29tZSBncmF0ZWQgY2hlZXNlIG9uIHRvcCBvZiB0aGUgY2hpY2tlbiBhbmQgcmljZSBiZWZvcmUgc2VydmluZy5cbiogQWRkIHNvbWUgc2F1dMOpZWQgdmVnZXRhYmxlcyAoc3VjaCBhcyBiZWxsIHBlcHBlcnMsIHp1Y2NoaW5pLCBvciBjYXJyb3RzKSB0byB0aGUgc2tpbGxldCB3aGVuIGNvb2tpbmcgdGhlIGNoaWNrZW4uXG4qIFN1YnN0aXR1dGUgYnJvd24gcmljZSBmb3Igd2hpdGUgcmljZSBmb3IgYSBoZWFsdGhpZXIgYWx0ZXJuYXRpdmUuXG4qIEFkZCBzb21lIGNoaWNrZW4gYnJvdGggb3Igc3RvY2sgdG8gdGhlIHJpY2Ugd2hlbiBjb29raW5nIGl0IGZvciBhZGRlZCBmbGF2b3IuIn0sImxvZ3Byb2JzIjpudWxsLCJmaW5pc2hfcmVhc29uIjoic3RvcCJ9XSwidXNhZ2UiOnsicXVldWVfdGltZSI6MC4wMjc0ODA5NzIsInByb21wdF90b2tlbnMiOjI2LCJwcm9tcHRfdGltZSI6MC4wMDI1NDk4NjMsImNvbXBsZXRpb25fdG9rZW5zIjo0NzIsImNvbXBsZXRpb25fdGltZSI6MC43NTY5NzQwMjgsInRvdGFsX3Rva2VucyI6NDk4LCJ0b3RhbF90aW1lIjowLjc1OTUyMzg5MX0sInN5c3RlbV9maW5nZXJwcmludCI6ImZwX2M1ZjIwYjViYjEiLCJ4X2dyb3EiOnsiaWQiOiJyZXFfMDFqZ3ZkNXY2cWVkOHN6bmQxOWQxZzR0YXMifX0K
-  recorded_at: Sun, 05 Jan 2025 14:16:21 GMT
+      string: '{"id":"chatcmpl-3c26d411-5ca1-4f23-b676-538a390d6c12","object":"chat.completion","created":1736092206,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple recipe for chicken and rice using just those three ingredients:\n\nIngredients:\n\n*
+        1 lb boneless, skinless chicken breasts or thighs\n* 1 cup uncooked white
+        rice\n* Salt, to taste\n\nInstructions:\n\n1. Rinse the rice in a fine mesh
+        strainer and set aside.\n2. Season the chicken on both sides with salt to
+        taste.\n3. Heat a large skillet over medium-high heat. When the skillet is
+        hot, add the chicken and cook for 3-4 minutes per side, or until the chicken
+        is browned on both sides and cooked through. Remove the chicken from the skillet
+        and set it aside.\n4. Add the rinsed rice to the same skillet, and cook over
+        medium heat for 2-3 minutes, stirring frequently, until the rice is lightly
+        toasted.\n5. Pour 2 cups of water into the skillet, and bring to a boil. Reduce
+        the heat to low, cover the skillet, and let the rice simmer for 15-20 minutes,
+        or until the water is absorbed and the rice is cooked.\n6. While the rice
+        is cooking, chop the cooked chicken into bite-sized pieces.\n7. When the rice
+        is cooked, fluff it with a fork and stir in the chopped chicken. Taste and
+        adjust the seasoning with more salt if needed.\n8. Serve the chicken and rice
+        hot, garnished with your choice of herbs, vegetables or sauces, if desired.
+        Enjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.030581124,"prompt_tokens":26,"prompt_time":0.002543853,"completion_tokens":341,"completion_time":0.544496784,"total_tokens":367,"total_time":0.547040637},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjhhmse309bctdvqznyzk9"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:07 GMT
 recorded_with: VCR 6.3.1

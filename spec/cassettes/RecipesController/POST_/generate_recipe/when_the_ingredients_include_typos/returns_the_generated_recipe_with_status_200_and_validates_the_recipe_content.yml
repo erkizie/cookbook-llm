@@ -1,0 +1,264 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Determine
+        if the following input represents a valid list of cooking ingredients. Focus
+        only on identifying ingredients even if the input contains typos or misspellings.
+        Do NOT attempt to correct typos or suggest alternative spellings. Ignore extra
+        context, quantities, or casual phrasing. Respond ONLY in one word with ''accepted''
+        if the input contains valid ingredients, or ''rejected'' otherwise. Input:
+        chikcen, rice, saalt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0343c42eec6-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14382'
+      X-Ratelimit-Remaining-Tokens:
+      - '2245'
+      X-Ratelimit-Reset-Requests:
+      - 1m47.519s
+      X-Ratelimit-Reset-Tokens:
+      - 33.058999999s
+      X-Request-Id:
+      - req_01jgvjjq8efm2shddmdv7n644q
+      Set-Cookie:
+      - __cf_bm=wNMS.IfDiCsDL7bGQepcTToK8kJRzAQG4pUgQmbP.O4-1736092245-1.0.1.1-OQ6lNGc1080fsV5FS_VY4bf_Q87CxLD18..jlOoce75hVM82mFJPs.mmPHsGXznS2hRjL0likN0v8AeowMkmHA;
+        path=/; expires=Sun, 05-Jan-25 16:20:45 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-2abdfd66-0de3-4d5a-b768-3b88cbc02f3a","object":"chat.completion","created":1736092245,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.023379162,"prompt_tokens":102,"prompt_time":0.007402068,"completion_tokens":3,"completion_time":0.00320083,"total_tokens":105,"total_time":0.010602898},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjq8efm2shddmdv7n644q"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:45 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: chikcen, rice, saalt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0362f363506-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14381'
+      X-Ratelimit-Remaining-Tokens:
+      - '2238'
+      X-Ratelimit-Reset-Requests:
+      - 1m53.687s
+      X-Ratelimit-Reset-Tokens:
+      - 33.138s
+      X-Request-Id:
+      - req_01jgvjjqj7etgb613q9h62jpqz
+      Set-Cookie:
+      - __cf_bm=gFkMGNTL8Vty.Bz3x_XdHk4Gacv0eIjuYtGe.9is1DE-1736092246-1.0.1.1-gg4JQpz9KoY20A.Qkh6zJbCN3f.k9hmb1A_Ma2lbqr2yHXdT4LGIQEImRPqDC0ikY5mNSybyeyHUpC5LnXbRjw;
+        path=/; expires=Sun, 05-Jan-25 16:20:46 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-4ccecd01-e530-45bc-844c-e84263a65dd1","object":"chat.completion","created":1736092245,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Here''s
+        a simple recipe for Chicken and Rice with Salt:\n\nIngredients:\n\n* 2 boneless,
+        skinless chicken breasts\n* 1 cup of long-grain white rice\n* 2 cups of water\n*
+        1 teaspoon of salt\n\nInstructions:\n\n1. Wash your hands and clean your cooking
+        area.\n2. Cut the chicken breasts into bite-sized pieces.\n3. Rinse the rice
+        in a strainer under cold running water until the water runs clear.\n4. Heat
+        a large pan over medium heat and add a small amount of oil.\n5. Add the chicken
+        pieces to the pan and cook until they are no longer pink in the middle.\n6.
+        Remove the chicken from the pan and set it aside.\n7. Add the rinsed rice
+        to the pan and stir it around to coat it in the oil.\n8. Add the 2 cups of
+        water to the pan and bring it to a boil.\n9. Once the water is boiling, reduce
+        the heat to low and cover the pan.\n10. Let the rice simmer for 18-20 minutes,
+        or until it has absorbed all of the water and is tender.\n11. While the rice
+        is cooking, season the chicken with salt to taste.\n12. Once the rice is done,
+        fluff it with a fork and mix in the cooked chicken.\n13. Taste the dish and
+        add more salt if necessary.\n14. Serve the Chicken and Rice hot, and enjoy!\n\nPrep
+        Time: 10 minutes\nCook Time: 25-30 minutes\nTotal Time: 35-40 minutes\n\nThis
+        recipe makes 4 servings. You can add additional seasonings such as garlic
+        powder, onion powder, or dried herbs to the rice while it''s cooking for added
+        flavor. You can also use chicken broth instead of water for extra flavor.
+        This dish can be stored in the refrigerator for up to 3 days."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.028007558000000002,"prompt_tokens":29,"prompt_time":0.003084581,"completion_tokens":440,"completion_time":0.702550893,"total_tokens":469,"total_time":0.705635474},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjqj7etgb613q9h62jpqz"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:46 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chikcen, rice, saalt.
+        Recipe: Here''s a simple recipe for Chicken and Rice with Salt:\n\nIngredients:\n\n*
+        2 boneless, skinless chicken breasts\n* 1 cup of long-grain white rice\n*
+        2 cups of water\n* 1 teaspoon of salt\n\nInstructions:\n\n1. Wash your hands
+        and clean your cooking area.\n2. Cut the chicken breasts into bite-sized pieces.\n3.
+        Rinse the rice in a strainer under cold running water until the water runs
+        clear.\n4. Heat a large pan over medium heat and add a small amount of oil.\n5.
+        Add the chicken pieces to the pan and cook until they are no longer pink in
+        the middle.\n6. Remove the chicken from the pan and set it aside.\n7. Add
+        the rinsed rice to the pan and stir it around to coat it in the oil.\n8. Add
+        the 2 cups of water to the pan and bring it to a boil.\n9. Once the water
+        is boiling, reduce the heat to low and cover the pan.\n10. Let the rice simmer
+        for 18-20 minutes, or until it has absorbed all of the water and is tender.\n11.
+        While the rice is cooking, season the chicken with salt to taste.\n12. Once
+        the rice is done, fluff it with a fork and mix in the cooked chicken.\n13.
+        Taste the dish and add more salt if necessary.\n14. Serve the Chicken and
+        Rice hot, and enjoy!\n\nPrep Time: 10 minutes\nCook Time: 25-30 minutes\nTotal
+        Time: 35-40 minutes\n\nThis recipe makes 4 servings. You can add additional
+        seasonings such as garlic powder, onion powder, or dried herbs to the rice
+        while it''s cooking for added flavor. You can also use chicken broth instead
+        of water for extra flavor. This dish can be stored in the refrigerator for
+        up to 3 days.. Respond with ''accepted'' if the recipe matches the ingredients
+        or ''rejected'' otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a03cbe9e0258-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14380'
+      X-Ratelimit-Remaining-Tokens:
+      - '1395'
+      X-Ratelimit-Reset-Requests:
+      - 1m58.948s
+      X-Ratelimit-Reset-Tokens:
+      - 43.251999999s
+      X-Request-Id:
+      - req_01jgvjjrjzfjwspcfkst1crvkf
+      Set-Cookie:
+      - __cf_bm=gqU1As2q.ApKvGtiQNQQZBBxKADaXUS.JZ.fOGPYVzI-1736092246-1.0.1.1-t.ge72VpVH8ClPXQyr8S2StHgk2Dp.5clzWJB1a1L27z5vp7ixPnuVzyKwhhlhYg4V6xNMm_D.eZQrQ4A1Jj9A;
+        path=/; expires=Sun, 05-Jan-25 16:20:46 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-dc9057f4-c732-4830-bdce-9d2646c6205c","object":"chat.completion","created":1736092246,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        The recipe matches the given ingredients: chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.01732141,"prompt_tokens":490,"prompt_time":0.025003554,"completion_tokens":18,"completion_time":0.027170719,"total_tokens":508,"total_time":0.052174273},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjrjzfjwspcfkst1crvkf"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:46 GMT
+recorded_with: VCR 6.3.1

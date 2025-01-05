@@ -27,7 +27,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Jan 2025 14:16:23 GMT
+      - Sun, 05 Jan 2025 15:50:09 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fd415f8e87e020f-WAW
+      - 8fd49f566f73ecc0-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -53,31 +53,28 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14385'
+      - '14381'
       X-Ratelimit-Remaining-Tokens:
-      - '2257'
+      - '486'
       X-Ratelimit-Reset-Requests:
-      - 1m29.638s
+      - 1m53.528s
       X-Ratelimit-Reset-Tokens:
-      - 32.905s
+      - 54.166s
       X-Request-Id:
-      - req_01jgvd5xzpfgbacycyfctcmbzz
+      - req_01jgvjhmm2emyvmf4j00g2xghd
       Set-Cookie:
-      - __cf_bm=MjU.cZPIbo2gZWWQDhREsuIBAi0Lb_4Ibf03AzLKbGk-1736086583-1.0.1.1-GEUasB1QXV05SYh95UDNrQd3.kx0TE1b60uguzCpm8YLDonqH2NVN.laP0A2LSD3EA_vJSrlsfJVbDj1KLKTOA;
-        path=/; expires=Sun, 05-Jan-25 14:46:23 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=Gt.o46uegRhc2dF2m9r.pHevyvm_xBUxoJBhYEBbBAs-1736092209-1.0.1.1-k8OEA19HT1klg8hf2k3938NBmacrA7Tsac7BaphPDTYVa0rCmyXv.K_BNToIOjAKk4nzL0DA_cl4EuCOT2G1eA;
+        path=/; expires=Sun, 05-Jan-25 16:20:09 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-9430c40c-252a-4984-b611-46362afd0da4","object":"chat.completion","created":1736086583,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted\n\nThe
-        recipe only includes three steps to prepare a dish using the provided ingredients:
-        chicken, rice, and salt. The steps mention boiling rice, cooking chicken,
-        and mixing them together. Salt is not explicitly mentioned in the steps, but
-        it can be assumed that it would be used for seasoning the chicken while cooking
-        or the mixed dish during serving, which is a common practice. Hence, the recipe
-        is accepted."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.027728211000000003,"prompt_tokens":74,"prompt_time":0.005134266,"completion_tokens":88,"completion_time":0.139917053,"total_tokens":162,"total_time":0.145051319},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5xzpfgbacycyfctcmbzz"}}
+      string: '{"id":"chatcmpl-a9977047-d856-40e3-bdb9-7b2e1075edae","object":"chat.completion","created":1736092209,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        The recipe''s instructions can be followed using the provided ingredients:
+        chicken, rice, and salt. Salt was not mentioned in the steps, but it can be
+        added during the cooking process of either the rice or chicken, as per preference."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.025163513,"prompt_tokens":74,"prompt_time":0.005741472,"completion_tokens":52,"completion_time":0.081860793,"total_tokens":126,"total_time":0.087602265},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjhmm2emyvmf4j00g2xghd"}}
 
         '
-  recorded_at: Sun, 05 Jan 2025 14:16:23 GMT
+  recorded_at: Sun, 05 Jan 2025 15:50:09 GMT
 recorded_with: VCR 6.3.1

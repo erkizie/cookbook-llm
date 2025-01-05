@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Jan 2025 14:16:18 GMT
+      - Sun, 05 Jan 2025 15:50:04 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -32,7 +32,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fd415d30ff1eeb9-WAW
+      - 8fd49f2e8a12c077-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -50,47 +50,47 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14396'
+      - '14392'
       X-Ratelimit-Remaining-Tokens:
-      - '4105'
+      - '2331'
       X-Ratelimit-Reset-Requests:
-      - 23.573s
+      - 47.481s
       X-Ratelimit-Reset-Tokens:
-      - 10.74s
+      - 32.019s
       X-Request-Id:
-      - req_01jgvd5r26fyntwtys79s46j0m
+      - req_01jgvjhec6fcbrk2prw0ea9k8p
       Set-Cookie:
-      - __cf_bm=ZiMQzDxtdKQsbD1OLvvwxB0DdbaoEoNmVV0AD.HfY0g-1736086578-1.0.1.1-SahLHPKOUMkUrWFOso4SvYc8s0c_Ws.aSv61MxqWqQtDVpBR7j_UJEDmuGV._7U2jaB9ZF02fxlI6915FzztYQ;
-        path=/; expires=Sun, 05-Jan-25 14:46:18 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=i4DOuFvnL.ZkODqwoUpDjCCCTbIdNNXkqbrNj34qz0I-1736092204-1.0.1.1-N.pPtRfW_ZtbMMj7QPGl2RWemiVLV_BAb_NyipGNlRHed0P5Ocr_YZkxSWCQXMX37DEvfX.7CpHjegISpICvMg;
+        path=/; expires=Sun, 05-Jan-25 16:20:04 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-28581279-8518-407f-8157-6f7e6b7055ca","object":"chat.completion","created":1736086577,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
-        here''s a simple and delicious recipe for chicken and rice:\n\nIngredients:\n\n*
-        1 1/2 pounds boneless, skinless chicken breasts or thighs, cut into bite-sized
-        pieces\n* 1 cup uncooked long-grain white rice\n* 2 cups low-sodium chicken
-        broth\n* 1 cup water\n* 1 onion, chopped\n* 2 cloves garlic, minced\n* 1 bell
-        pepper, chopped (optional)\n* 1 carrot, chopped (optional)\n* 2 tablespoons
-        olive oil\n* 1 teaspoon paprika\n* 1 teaspoon dried oregano\n* 1 teaspoon
-        dried thyme\n* Salt and pepper, to taste\n* Fresh parsley, chopped (for garnish)\n\nInstructions:\n\n1.
-        Heat the olive oil in a large skillet or Dutch oven over medium-high heat.
-        Add the chicken and cook until browned on all sides, about 5-7 minutes. Remove
-        the chicken from the skillet and set aside.\n2. Add the chopped onion, garlic,
-        bell pepper, and carrot (if using) to the skillet. Cook until the vegetables
-        are softened and fragrant, about 3-5 minutes.\n3. Add the paprika, oregano,
-        thyme, salt, and pepper to the skillet. Stir to combine and cook for 1 minute.\n4.
-        Add the rice to the skillet and cook for 2-3 minutes, stirring frequently,
-        until the rice is lightly toasted.\n5. Add the chicken broth and water to
-        the skillet, stirring to scrape up any browned bits from the bottom of the
-        skillet.\n6. Bring the mixture to a boil, then reduce the heat to low and
-        simmer, covered, for 15-20 minutes, or until the rice is cooked and has absorbed
-        most of the liquid.\n7. Add the chicken back to the skillet and stir to combine.
-        Cook for an additional 5 minutes, or until the chicken is cooked through.\n8.
-        Taste and adjust the seasoning as needed.\n9. Serve the chicken and rice hot,
-        garnished with chopped fresh parsley.\n\nEnjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.028211276,"prompt_tokens":16,"prompt_time":0.002174264,"completion_tokens":498,"completion_time":0.80059249,"total_tokens":514,"total_time":0.802766754},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5r26fyntwtys79s46j0m"}}
+      string: '{"id":"chatcmpl-a095ed7e-68e6-4e3f-b3f6-f2ea5abeac1f","object":"chat.completion","created":1736092203,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Sure,
+        here''s a simple and delicious recipe for chicken and rice that you can try:\n\nIngredients:\n\n*
+        1 1/2 pounds boneless, skinless chicken breasts, cut into bite-sized pieces\n*
+        1 cup uncooked long-grain white rice\n* 2 tablespoons olive oil\n* 1 medium
+        onion, diced\n* 3 cloves garlic, minced\n* 1 red or green bell pepper, diced\n*
+        1 (14.5 oz) can diced tomatoes, undrained\n* 2 cups chicken broth\n* 1 teaspoon
+        paprika\n* 1 teaspoon dried oregano\n* 1/2 teaspoon salt\n* 1/4 teaspoon black
+        pepper\n* 1/2 cup frozen peas\n* Optional toppings: chopped fresh cilantro
+        or parsley, sour cream, shredded cheese\n\nInstructions:\n\n1. Heat the olive
+        oil in a large skillet or Dutch oven over medium-high heat. Add the chicken
+        and cook until browned, about 5-7 minutes. Remove the chicken from the skillet
+        and set it aside.\n2. Add the diced onion to the skillet and cook until softened,
+        about 3-4 minutes. Add the minced garlic and diced bell pepper and cook for
+        another 2-3 minutes, until the pepper is starting to soften.\n3. Add the rice
+        to the skillet and stir to coat it with the oil and vegetables. Cook for 1-2
+        minutes, until the rice starts to brown slightly.\n4. Add the diced tomatoes,
+        chicken broth, paprika, oregano, salt, and black pepper to the skillet. Stir
+        to combine.\n5. Bring the mixture to a boil, then reduce the heat to low,
+        cover, and simmer for 15-20 minutes, until the rice is cooked and most of
+        the liquid has been absorbed.\n6. Stir in the frozen peas and add the chicken
+        back to the skillet. Cook for another 5-10 minutes, until the peas are heated
+        through and the chicken is cooked through.\n7. Serve the chicken and rice
+        hot, with your choice of toppings.\n\nEnjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.029448942,"prompt_tokens":16,"prompt_time":0.002157184,"completion_tokens":500,"completion_time":0.795716733,"total_tokens":516,"total_time":0.797873917},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjhec6fcbrk2prw0ea9k8p"}}
 
         '
-  recorded_at: Sun, 05 Jan 2025 14:16:18 GMT
+  recorded_at: Sun, 05 Jan 2025 15:50:04 GMT
 recorded_with: VCR 6.3.1

@@ -1,0 +1,250 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Determine
+        if the following input represents a valid list of cooking ingredients. Focus
+        only on identifying ingredients even if the input contains typos or misspellings.
+        Do NOT attempt to correct typos or suggest alternative spellings. Ignore extra
+        context, quantities, or casual phrasing. Respond ONLY in one word with ''accepted''
+        if the input contains valid ingredients, or ''rejected'' otherwise. Input:
+        chicken, rice, salt, and some random thoughts.."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a03ef985bf38-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14379'
+      X-Ratelimit-Remaining-Tokens:
+      - '1302'
+      X-Ratelimit-Reset-Requests:
+      - 2m5.64s
+      X-Ratelimit-Reset-Tokens:
+      - 44.375s
+      X-Request-Id:
+      - req_01jgvjjrydej89pk8waw61wtfg
+      Set-Cookie:
+      - __cf_bm=oYxL.GHBTtTywyFz69FPyUkon4RPXpdgbYEGRFx0GvU-1736092247-1.0.1.1-Zyp4UoSn47fstVk3fQKIfPWlbK54pwQNXBb_2rHGGoOo9zACfm1zRtPcW_lPfaHSldSWf0K4omgojbtad1Qwnw;
+        path=/; expires=Sun, 05-Jan-25 16:20:47 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-d6c4f29d-541d-41e1-9723-33b874b734bd","object":"chat.completion","created":1736092247,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.025414749999999996,"prompt_tokens":104,"prompt_time":0.006714819,"completion_tokens":2,"completion_time":0.001623125,"total_tokens":106,"total_time":0.008337944},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjrydej89pk8waw61wtfg"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:47 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: chicken, rice, salt, and some
+        random thoughts.."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0410cc8ecc6-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14378'
+      X-Ratelimit-Remaining-Tokens:
+      - '1294'
+      X-Ratelimit-Reset-Requests:
+      - 2m11.683s
+      X-Ratelimit-Reset-Tokens:
+      - 44.463s
+      X-Request-Id:
+      - req_01jgvjjs8cfcet8rm6990hg435
+      Set-Cookie:
+      - __cf_bm=NXHVTHT.rTVhDDl3W46TStmYtB8rHbPcFTM0itpY68U-1736092248-1.0.1.1-Jay10GcMTcU.h12.xEesTtgj7sTJBppzhIRacKWUYqmAp86yevNXWqvLh.GxoTTKsJR0AoOImjnuzUaWQ.wSVw;
+        path=/; expires=Sun, 05-Jan-25 16:20:48 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLTU0YjQzMmEwLWJjNDQtNDY1NC1hMjEzLThkMzkzZDYxOGU3ZiIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzYwOTIyNDcsIm1vZGVsIjoibWl4dHJhbC04eDdiLTMyNzY4IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsImNvbnRlbnQiOiJIZXJlJ3MgYSBzaW1wbGUgcmVjaXBlIGZvciBDaGlja2VuIGFuZCBSaWNlLCB3aXRoIGEgYml0IG9mIHdoaW1zaWNhbCBpbnNwaXJhdGlvbiBhZGRlZCBpbi4gTGV0J3MgY2FsbCBpdCBcIkNoaWNrZW4gU291dmVuaXJzIHdpdGggUmljZS1zdGFtcGVkIE1lbW9yeSBMYW5lLlwiXG5cbkluZ3JlZGllbnRzOlxuXG4qIDQgY2hpY2tlbiBicmVhc3RzXG4qIDIgY3VwcyBvZiB1bmNvb2tlZCByaWNlXG4qIFNhbHQsIHRvIHRhc3RlXG4qIEEgaGFuZGZ1bCBvZiBcInJhbmRvbSB0aG91Z2h0c1wiXG5cbkluc3RydWN0aW9uczpcblxuU3RlcCAxOiBNZW1vcnkgTGFuZVxuVGFrZSBhIG1vbWVudCB0byByZWZsZWN0IG9uIHNvbWUgb2YgeW91ciBmb25kZXN0IG1lbW9yaWVzLCBhbmQgam90IGRvd24gYSBmZXcga2V5d29yZHMgdG8gcmVwcmVzZW50IGVhY2ggb25lLiBUaGVzZSBcInJhbmRvbSB0aG91Z2h0c1wiIHdpbGwgc2VydmUgYXMgdGhlIGluc3BpcmF0aW9uIGZvciB0aGlzIGRpc2guXG5cblN0ZXAgMjogQ2hpY2tlbiBTb3V2ZW5pcnNcblNlYXNvbiB0aGUgY2hpY2tlbiBicmVhc3RzIGV2ZW5seSB3aXRoIHNhbHQgYW5kIHlvdXIgZmF2b3JpdGUgaGVyYnMgb3Igc3BpY2VzIHRoYXQgcmVtaW5kIHlvdSBvZiB0aG9zZSBtZW1vcmllcywgdHJhbnNmb3JtaW5nIHRoZSBjaGlja2VuIGludG8gXCJDaGlja2VuIFNvdXZlbmlycy5cIlxuXG5TdGVwIDM6IENvb2tpbmcgdGhlIENoaWNrZW4gU291dmVuaXJzXG5QcmVoZWF0IHlvdXIgb3ZlbiB0byAzNzXCsEYgKDE5MMKwQykuIFBsYWNlIHRoZSBDaGlja2VuIFNvdXZlbmlycyBpbiBhIGJha2luZyBkaXNoLCBlbnN1cmluZyB0aGVyZSBpcyBhbXBsZSBzcGFjZSBiZXR3ZWVuIGVhY2ggcGllY2UuIEJha2UgdGhlIGNoaWNrZW4gZm9yIGFwcHJveGltYXRlbHkgMjUtMzAgbWludXRlcywgb3IgdW50aWwgdGhlIGludGVybmFsIHRlbXBlcmF0dXJlIHJlYWNoZXMgMTY1wrBGICg3NMKwQykuIFJlbW92ZSBmcm9tIHRoZSBvdmVuIGFuZCBhbGxvdyB0aGUgQ2hpY2tlbiBTb3V2ZW5pcnMgdG8gcmVzdCBmb3IgYSBmZXcgbWludXRlcy5cblxuU3RlcCA0OiBSaWNlLXN0YW1wZWQgTWVtb3J5IExhbmVcbldoaWxlIHRoZSBDaGlja2VuIFNvdXZlbmlycyBhcmUgYmFraW5nLCBwcmVwYXJlIHlvdXIgTWVtb3J5IExhbmUgcmljZS4gUmluc2UgdGhlIHJpY2UgdW5kZXIgY29sZCB3YXRlciB1bnRpbCB0aGUgd2F0ZXIgcnVucyBjbGVhciwgdGhlbiBjb29rIGl0IGFjY29yZGluZyB0byB0aGUgcGFja2FnZSBpbnN0cnVjdGlvbnMsIGFkanVzdGluZyB0aGUgd2F0ZXIgcmF0aW8gaWYgbmVlZGVkLiBPbmNlIHRoZSByaWNlIGlzIGNvb2tlZCwgc3ByZWFkIGl0IG91dCBvbiBhIGJha2luZyBzaGVldCBvciBsYXJnZSBwbGF0ZS5cblxuU3RlcCA1OiBFbWJlbGxpc2ggdGhlIE1lbW9yeSBMYW5lXG5TcHJpbmtsZSB5b3VyIFwicmFuZG9tIHRob3VnaHRzXCIgKGtleXdvcmRzKSBvbiB0b3Agb2YgdGhlIGNvb2tlZCByaWNlLiBHZW50bHkgaW5jb3Jwb3JhdGUgdGhlIHdvcmRzIHNvIHRoYXQgdGhleSBhcmUgaGlkZGVuIHdpdGhpbiB0aGUgcmljZS4gVGhpcyB3aWxsIHJlcHJlc2VudCB0aGUgaWRlYSBvZiBsaWZlJ3MgZXhwZXJpZW5jZXMgaGlkZGVuIGJlbmVhdGggdGhlIHN1cmZhY2Ugb2Ygb3VyIG1lbW9yaWVzLlxuXG5TdGVwIDY6IFBsYXRpbmdcblNsaWNlIHRoZSBDaGlja2VuIFNvdXZlbmlycyBhbmQgYXJyYW5nZSB0aGVtIG9uIGEgc2VydmluZyBwbGF0dGVyLiBTcG9vbiB0aGUgUmljZS1zdGFtcGVkIE1lbW9yeSBMYW5lIGFsb25nc2lkZSB0aGUgQ2hpY2tlbiBTb3V2ZW5pcnMsIGFuZCBzZXJ2ZSB3YXJtLiBFbmpveSB0aGUgZmxhdm9ycyBvZiB0aGlzIGRpc2gsIGFuZCBsZXQgaXQgc2VydmUgYXMgYSByZW1pbmRlciBvZiB5b3VyIHByZWNpb3VzIG1lbW9yaWVzLiBCb24gYXBww6l0aXQhIn0sImxvZ3Byb2JzIjpudWxsLCJmaW5pc2hfcmVhc29uIjoic3RvcCJ9XSwidXNhZ2UiOnsicXVldWVfdGltZSI6MC4wMjY5MjkyOTUsInByb21wdF90b2tlbnMiOjMxLCJwcm9tcHRfdGltZSI6MC4wMDMzNDMxMSwiY29tcGxldGlvbl90b2tlbnMiOjUwMiwiY29tcGxldGlvbl90aW1lIjowLjgwODAxMjk0NiwidG90YWxfdG9rZW5zIjo1MzMsInRvdGFsX3RpbWUiOjAuODExMzU2MDU2fSwic3lzdGVtX2ZpbmdlcnByaW50IjoiZnBfYzVmMjBiNWJiMSIsInhfZ3JvcSI6eyJpZCI6InJlcV8wMWpndmpqczhjZmNldDhybTY5OTBoZzQzNSJ9fQo=
+  recorded_at: Sun, 05 Jan 2025 15:50:48 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chicken, rice, salt, and
+        some random thoughts.. Recipe: Here''s a simple recipe for Chicken and Rice,
+        with a bit of whimsical inspiration added in. Let''s call it \"Chicken Souvenirs
+        with Rice-stamped Memory Lane.\"\n\nIngredients:\n\n* 4 chicken breasts\n*
+        2 cups of uncooked rice\n* Salt, to taste\n* A handful of \"random thoughts\"\n\nInstructions:\n\nStep
+        1: Memory Lane\nTake a moment to reflect on some of your fondest memories,
+        and jot down a few keywords to represent each one. These \"random thoughts\"
+        will serve as the inspiration for this dish.\n\nStep 2: Chicken Souvenirs\nSeason
+        the chicken breasts evenly with salt and your favorite herbs or spices that
+        remind you of those memories, transforming the chicken into \"Chicken Souvenirs.\"\n\nStep
+        3: Cooking the Chicken Souvenirs\nPreheat your oven to 375°F (190°C). Place
+        the Chicken Souvenirs in a baking dish, ensuring there is ample space between
+        each piece. Bake the chicken for approximately 25-30 minutes, or until the
+        internal temperature reaches 165°F (74°C). Remove from the oven and allow
+        the Chicken Souvenirs to rest for a few minutes.\n\nStep 4: Rice-stamped Memory
+        Lane\nWhile the Chicken Souvenirs are baking, prepare your Memory Lane rice.
+        Rinse the rice under cold water until the water runs clear, then cook it according
+        to the package instructions, adjusting the water ratio if needed. Once the
+        rice is cooked, spread it out on a baking sheet or large plate.\n\nStep 5:
+        Embellish the Memory Lane\nSprinkle your \"random thoughts\" (keywords) on
+        top of the cooked rice. Gently incorporate the words so that they are hidden
+        within the rice. This will represent the idea of life''s experiences hidden
+        beneath the surface of our memories.\n\nStep 6: Plating\nSlice the Chicken
+        Souvenirs and arrange them on a serving platter. Spoon the Rice-stamped Memory
+        Lane alongside the Chicken Souvenirs, and serve warm. Enjoy the flavors of
+        this dish, and let it serve as a reminder of your precious memories. Bon appétit!.
+        Respond with ''accepted'' if the recipe matches the ingredients or ''rejected''
+        otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0480c4db17f-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14377'
+      X-Ratelimit-Remaining-Tokens:
+      - '331'
+      X-Ratelimit-Reset-Requests:
+      - 2m16.858999999s
+      X-Ratelimit-Reset-Tokens:
+      - 56.025s
+      X-Request-Id:
+      - req_01jgvjjtbwe34agybt3aw4fzg5
+      Set-Cookie:
+      - __cf_bm=lclze59kNVYVI6_hrp4varT.LaM6ZkyIdck.NZL9Af8-1736092248-1.0.1.1-sPCYp7d95xQXsfXSYKfeMP6T3d6l3BlzusuMmGticsEeE54L3dOzJQLY1vabtWPjdDjp8x3_vXw8Jtp4JD6gsw;
+        path=/; expires=Sun, 05-Jan-25 16:20:48 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-47dd9df4-25c7-4517-b7bd-f5632e336ff5","object":"chat.completion","created":1736092248,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        The recipe matches the ingredients provided, even though it includes an artistic/symbolic
+        use of \"random thoughts\" in the cooking process."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.017644399999999998,"prompt_tokens":555,"prompt_time":0.027990146,"completion_tokens":31,"completion_time":0.048078055,"total_tokens":586,"total_time":0.076068201},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjtbwe34agybt3aw4fzg5"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:48 GMT
+recorded_with: VCR 6.3.1

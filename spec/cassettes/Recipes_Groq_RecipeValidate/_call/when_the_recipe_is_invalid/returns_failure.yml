@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Jan 2025 14:16:23 GMT
+      - Sun, 05 Jan 2025 15:50:09 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -34,7 +34,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8fd415f69929ecb6-WAW
+      - 8fd49f53890734e0-WAW
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -52,28 +52,30 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '5000'
       X-Ratelimit-Remaining-Requests:
-      - '14386'
+      - '14382'
       X-Ratelimit-Remaining-Tokens:
-      - '2343'
+      - '601'
       X-Ratelimit-Reset-Requests:
-      - 1m23.561999999s
+      - 1m47.469s
       X-Ratelimit-Reset-Tokens:
-      - 31.879s
+      - 52.78s
       X-Request-Id:
-      - req_01jgvd5xmae88r5xmkj7fkda1w
+      - req_01jgvjhm59ej2tg8ceap8xejwx
       Set-Cookie:
-      - __cf_bm=vvYzRThjWIV2H.uMgxpbG1W3Q.U8_BCMeSsrYMBRQpA-1736086583-1.0.1.1-hkMb8bAosIoB9N2ud0IVfSO13idfOU5CFeb22gy0VevSqp2B01eJO2KxKhSkKv_QgCUkyEGGTmijwC9ofMbXcA;
-        path=/; expires=Sun, 05-Jan-25 14:46:23 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=Yka7OafnvHp7.gn5KlWDNKT4iSXlPoz.fzq4Zo.CS8I-1736092209-1.0.1.1-HgxWyuwEmCnHk0OWa8U0MB88MUHu0.QHztnyLBPys4s7eehTn2DUOUm3yXTsvopYvsrf9e1V5gk.VZxPxvKucQ;
+        path=/; expires=Sun, 05-Jan-25 16:20:09 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-ee0d5c07-81ac-4a65-a783-88cc8cc716c3","object":"chat.completion","created":1736086582,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"The
-        recipe is rejected because it does not match the given ingredients. The recipe
-        calls for pasta and cheese which are not listed in the ingredients. The ingredients
-        consist of chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.024798296,"prompt_tokens":64,"prompt_time":0.005801694,"completion_tokens":41,"completion_time":0.064687186,"total_tokens":105,"total_time":0.07048888},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvd5xmae88r5xmkj7fkda1w"}}
+      string: '{"id":"chatcmpl-030aec14-944f-4613-81b7-66dcee9fb9d1","object":"chat.completion","created":1736092209,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Based
+        on the ingredients you''ve provided (chicken, rice, salt), this recipe would
+        be considered rejected. The recipe steps mention boiling pasta and adding
+        cheese, but those items are not included in the list of ingredients. To make
+        this recipe valid, you would need to include pasta and cheese in your ingredient
+        list, or modify the recipe to match the ingredients you have."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.025915573999999997,"prompt_tokens":64,"prompt_time":0.004752245,"completion_tokens":80,"completion_time":0.126801467,"total_tokens":144,"total_time":0.131553712},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjhm59ej2tg8ceap8xejwx"}}
 
         '
-  recorded_at: Sun, 05 Jan 2025 14:16:23 GMT
+  recorded_at: Sun, 05 Jan 2025 15:50:09 GMT
 recorded_with: VCR 6.3.1

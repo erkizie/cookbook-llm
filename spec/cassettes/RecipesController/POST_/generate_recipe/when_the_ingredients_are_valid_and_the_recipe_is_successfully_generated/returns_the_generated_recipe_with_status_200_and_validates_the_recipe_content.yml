@@ -1,0 +1,243 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Determine
+        if the following input represents a valid list of cooking ingredients. Focus
+        only on identifying ingredients even if the input contains typos or misspellings.
+        Do NOT attempt to correct typos or suggest alternative spellings. Ignore extra
+        context, quantities, or casual phrasing. Respond ONLY in one word with ''accepted''
+        if the input contains valid ingredients, or ''rejected'' otherwise. Input:
+        chicken, rice, salt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0291ce6ee4c-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14385'
+      X-Ratelimit-Remaining-Tokens:
+      - '3140'
+      X-Ratelimit-Reset-Requests:
+      - 1m26.324s
+      X-Ratelimit-Reset-Tokens:
+      - 22.312s
+      X-Request-Id:
+      - req_01jgvjjngfew08070q8s567wm3
+      Set-Cookie:
+      - __cf_bm=lK_y0cGtlmnLRcVwfluOLOpm2.KvcEKwGJ.iKDPQV3o-1736092243-1.0.1.1-6J8mh6CHRpBfgsU_oEkmMFni8qodbtCG9.w56M481bOKTY1cKOwqJLC6Vi.ByNjsYd84EGMCaJ6uY_EX280jjQ;
+        path=/; expires=Sun, 05-Jan-25 16:20:43 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-60bd647a-3196-4164-9c45-ac11a0aaacd8","object":"chat.completion","created":1736092243,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"accepted"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.026887594999999997,"prompt_tokens":99,"prompt_time":0.005864982,"completion_tokens":2,"completion_time":0.001606585,"total_tokens":101,"total_time":0.007471567},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjngfew08070q8s567wm3"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:43 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Generate
+        a step-by-step recipe using these ingredients: chicken, rice, salt."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a02ade2bb1c7-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14384'
+      X-Ratelimit-Remaining-Tokens:
+      - '3136'
+      X-Ratelimit-Reset-Requests:
+      - 1m35.693s
+      X-Ratelimit-Reset-Tokens:
+      - 22.357s
+      X-Request-Id:
+      - req_01jgvjjnt4fceset4htyjwb8qj
+      Set-Cookie:
+      - __cf_bm=dZbFl0HekuSLDCZh0iUIjEI6Dm_J9kWxraj.OMBLxfc-1736092244-1.0.1.1-yF7a0c9Qa992Em2M7ZQcdEM6_xsNXugIpUJhMmJ4h3FIaE5U69aPB0m0xO_qKGGVPLJMFoNkVye0p22ZrUbnWA;
+        path=/; expires=Sun, 05-Jan-25 16:20:44 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLWU2YmE5ZmU3LWMwOTktNDUxOC1iYzhmLWZlM2M0NGE4NWI0ZiIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzYwOTIyNDMsIm1vZGVsIjoibWl4dHJhbC04eDdiLTMyNzY4IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsImNvbnRlbnQiOiJUaXRsZTogU2ltcGxlIFNhbHRlZCBDaGlja2VuIGFuZCBSaWNlXG5cblNlcnZpbmdzOiAyXG5cbkluZ3JlZGllbnRzOlxuLSAyIGNoaWNrZW4gYnJlYXN0c1xuLSAxIGN1cCB1bmNvb2tlZCByaWNlXG4tIFNhbHQsIHRvIHRhc3RlXG5cbkluc3RydWN0aW9uczpcblxuU3RlcCAxOiBQcmVwYXJlIHRoZSBDaGlja2VuXG4tIFdhc2ggdGhlIGNoaWNrZW4gYnJlYXN0cyB0aG9yb3VnaGx5IHVuZGVyIGNvbGQgcnVubmluZyB3YXRlci5cbi0gUGF0IHRoZSBjaGlja2VuIGRyeSB3aXRoIHBhcGVyIHRvd2Vscy5cblxuU3RlcCAyOiBDb29rIHRoZSBSaWNlXG4tIFJpbnNlIHRoZSB1bmNvb2tlZCByaWNlIGluIGEgZmluZSBtZXNoIHN0cmFpbmVyIHVudGlsIHRoZSB3YXRlciBydW5zIGNsZWFyLiBUaGlzIGhlbHBzIHRvIHJlbW92ZSBleGNlc3Mgc3RhcmNoIGFuZCBwcmV2ZW50IGNsdW1waW5nLlxuLSBJbiBhIG1lZGl1bSBzYXVjZXBhbiwgYnJpbmcgMiBjdXBzIG9mIHdhdGVyIHRvIGEgYm9pbC5cbi0gQWRkIHRoZSByaW5zZWQgcmljZSB0byB0aGUgYm9pbGluZyB3YXRlciwgc3RpciBvbmNlLCBhbmQgdGhlbiByZWR1Y2UgdGhlIGhlYXQgdG8gbG93LlxuLSBDb3ZlciB0aGUgc2F1Y2VwYW4gd2l0aCBhIGxpZCBhbmQgbGV0IHRoZSByaWNlIHNpbW1lciBmb3IgYWJvdXQgMTggbWludXRlcyBvciB1bnRpbCBhbGwgdGhlIHdhdGVyIGlzIGFic29yYmVkIGFuZCB0aGUgcmljZSBpcyBjb29rZWQuIEF2b2lkIGxpZnRpbmcgdGhlIGxpZCB3aGlsZSB0aGUgcmljZSBpcyBjb29raW5nIHRvIGVuc3VyZSBldmVuIGNvb2tpbmcuXG5cblN0ZXAgMzogU2Vhc29uIGFuZCBDb29rIHRoZSBDaGlja2VuXG4tIFdoaWxlIHRoZSByaWNlIGlzIGNvb2tpbmcsIHNlYXNvbiBib3RoIHNpZGVzIG9mIHRoZSBjaGlja2VuIGJyZWFzdHMgd2l0aCBzYWx0LCBhY2NvcmRpbmcgdG8geW91ciBwcmVmZXJyZWQgdGFzdGUuXG4tIFByZWhlYXQgYSBsYXJnZSBza2lsbGV0IG92ZXIgbWVkaXVtIGhlYXQuXG4tIEFkZCBhIHNtYWxsIGFtb3VudCBvZiBvaWwgKGlmIG5vdCB1c2luZyBhIG5vbi1zdGljayBza2lsbGV0KSB0byBwcmV2ZW50IHRoZSBjaGlja2VuIGZyb20gc3RpY2tpbmcuXG4tIFBsYWNlIHRoZSBzZWFzb25lZCBjaGlja2VuIGJyZWFzdHMgaW4gdGhlIHNraWxsZXQuXG4tIENvb2sgZWFjaCBzaWRlIGZvciBhYm91dCA3IG1pbnV0ZXMsIG9yIHVudGlsIHRoZSBjaGlja2VuIHJlYWNoZXMgYW4gaW50ZXJuYWwgdGVtcGVyYXR1cmUgb2YgMTY1wrBGICg3NMKwQykuIFVzZSBhIG1lYXQgdGhlcm1vbWV0ZXIgdG8gZW5zdXJlIGRvbmVuZXNzLlxuXG5TdGVwIDQ6IFNlcnZlIHRoZSBEaXNoXG4tIE9uY2UgdGhlIGNoaWNrZW4gYW5kIHJpY2UgYXJlIGNvb2tlZCwgcmVtb3ZlIHRoZW0gZnJvbSBoZWF0LlxuLSBGbHVmZiB0aGUgcmljZSB3aXRoIGEgZm9yayBhbmQgZGl2aWRlIGl0IGJldHdlZW4gdHdvIHBsYXRlcy5cbi0gUGxhY2UgYSBjaGlja2VuIGJyZWFzdCBvbiB0b3Agb2YgdGhlIHJpY2Ugb24gZWFjaCBwbGF0ZS5cbi0gU2VydmUgaW1tZWRpYXRlbHkgYW5kIGVuam95IHlvdXIgU2ltcGxlIFNhbHRlZCBDaGlja2VuIGFuZCBSaWNlLiJ9LCJsb2dwcm9icyI6bnVsbCwiZmluaXNoX3JlYXNvbiI6InN0b3AifV0sInVzYWdlIjp7InF1ZXVlX3RpbWUiOjAuMDI4NjkxMzIyOTk5OTk5OTk4LCJwcm9tcHRfdG9rZW5zIjoyNiwicHJvbXB0X3RpbWUiOjAuMDAyNTIzMDEzLCJjb21wbGV0aW9uX3Rva2VucyI6NDI0LCJjb21wbGV0aW9uX3RpbWUiOjAuNjc3NTYzNzI4LCJ0b3RhbF90b2tlbnMiOjQ1MCwidG90YWxfdGltZSI6MC42ODAwODY3NDF9LCJzeXN0ZW1fZmluZ2VycHJpbnQiOiJmcF9jNWYyMGI1YmIxIiwieF9ncm9xIjp7ImlkIjoicmVxXzAxamd2ampudDRmY2VzZXQ0aHR5andiOHFqIn19Cg==
+  recorded_at: Sun, 05 Jan 2025 15:50:44 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"mixtral-8x7b-32768","messages":[{"role":"user","content":"Check
+        if this recipe is valid based on these ingredients: chicken, rice, salt. Recipe:
+        Title: Simple Salted Chicken and Rice\n\nServings: 2\n\nIngredients:\n- 2
+        chicken breasts\n- 1 cup uncooked rice\n- Salt, to taste\n\nInstructions:\n\nStep
+        1: Prepare the Chicken\n- Wash the chicken breasts thoroughly under cold running
+        water.\n- Pat the chicken dry with paper towels.\n\nStep 2: Cook the Rice\n-
+        Rinse the uncooked rice in a fine mesh strainer until the water runs clear.
+        This helps to remove excess starch and prevent clumping.\n- In a medium saucepan,
+        bring 2 cups of water to a boil.\n- Add the rinsed rice to the boiling water,
+        stir once, and then reduce the heat to low.\n- Cover the saucepan with a lid
+        and let the rice simmer for about 18 minutes or until all the water is absorbed
+        and the rice is cooked. Avoid lifting the lid while the rice is cooking to
+        ensure even cooking.\n\nStep 3: Season and Cook the Chicken\n- While the rice
+        is cooking, season both sides of the chicken breasts with salt, according
+        to your preferred taste.\n- Preheat a large skillet over medium heat.\n- Add
+        a small amount of oil (if not using a non-stick skillet) to prevent the chicken
+        from sticking.\n- Place the seasoned chicken breasts in the skillet.\n- Cook
+        each side for about 7 minutes, or until the chicken reaches an internal temperature
+        of 165°F (74°C). Use a meat thermometer to ensure doneness.\n\nStep 4: Serve
+        the Dish\n- Once the chicken and rice are cooked, remove them from heat.\n-
+        Fluff the rice with a fork and divide it between two plates.\n- Place a chicken
+        breast on top of the rice on each plate.\n- Serve immediately and enjoy your
+        Simple Salted Chicken and Rice.. Respond with ''accepted'' if the recipe matches
+        the ingredients or ''rejected'' otherwise."}],"max_tokens":1024,"temperature":1}'
+    headers:
+      Authorization:
+      - Bearer <API_KEY>
+      User-Agent:
+      - groq-ruby/0.3.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Jan 2025 15:50:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8fd4a0312cabef99-WAW
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '14400'
+      X-Ratelimit-Limit-Tokens:
+      - '5000'
+      X-Ratelimit-Remaining-Requests:
+      - '14383'
+      X-Ratelimit-Remaining-Tokens:
+      - '2325'
+      X-Ratelimit-Reset-Requests:
+      - 1m41.001s
+      X-Ratelimit-Reset-Tokens:
+      - 32.098999999s
+      X-Request-Id:
+      - req_01jgvjjps7fjwt3qsd0aenysmn
+      Set-Cookie:
+      - __cf_bm=Bc6jdAAY7utwvmNU_9KqylDweNVUeO0KZaUCOkbgE2I-1736092244-1.0.1.1-1h9besfoIVerFH5Of_rygivPxCoIcNMVPrIChfcDVsuFypS06EpQ4HUwl2TN7GtN_cR07HT5Z1LQGpaa9r58WQ;
+        path=/; expires=Sun, 05-Jan-25 16:20:44 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-bf679ef0-17ab-454e-8e4b-26981de4f310","object":"chat.completion","created":1736092244,"model":"mixtral-8x7b-32768","choices":[{"index":0,"message":{"role":"assistant","content":"Accepted.
+        The recipe matches the provided ingredients: chicken, rice, and salt."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.017151242999999997,"prompt_tokens":471,"prompt_time":0.02657404,"completion_tokens":18,"completion_time":0.027160938,"total_tokens":489,"total_time":0.053734978},"system_fingerprint":"fp_c5f20b5bb1","x_groq":{"id":"req_01jgvjjps7fjwt3qsd0aenysmn"}}
+
+        '
+  recorded_at: Sun, 05 Jan 2025 15:50:44 GMT
+recorded_with: VCR 6.3.1
