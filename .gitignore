@@ -13,3 +13,22 @@
 # IDE specific files
 .idea/
 .vscode/
+
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React build output
+/build/
+
+# Logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary files
+.DS_Store
+Thumbs.db
