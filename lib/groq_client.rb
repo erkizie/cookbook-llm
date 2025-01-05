@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# Wrapper for Groq API interactions
 class GroqClient
   MODEL_ID = 'mixtral-8x7b-32768'
 
